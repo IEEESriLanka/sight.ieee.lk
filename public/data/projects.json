@@ -1,0 +1,60 @@
+[
+  {
+    "id": "sdg-sprint",
+    "slug": "sdg-sprint",
+    "name": "SDG Sprint",
+    "subtitle": "Co-creating solutions for community challenges.",
+    "description": "Organized by IEEE Sri Lanka Section SIGHT with the Sustainable Development Council of Sri Lanka, the SDG Design Sprint brings together university students, young engineers, and community representatives to ideate and design practical humanitarian technology projects aligned with the UN Sustainable Development Goals. The initiative fosters innovation, collaboration, and capacity building by connecting grassroots needs with engineering talent.",
+    "short_description": "Co-creating innovative solutions for community challenges through collaborative design sprints.",
+    "sdgs": [3, 4, 6, 7, 11, 13, 17],
+    "started": "2025-08",
+    "cover_image": "/images/bg4.webp",
+    "logo": "/images/sdgs/sdg.webp",
+    "related_initiatives": [
+    ]
+  },
+  {
+    "id": "nenasa",
+    "slug": "nenasa",
+    "name": "Nenasa",
+    "subtitle": "STEM workshops inspiring underprivileged students.",
+    "description": "In collaboration with SLSAC, IEEE Sri Lanka Section SIGHT conducts STEM workshops in underprivileged schools. Facilitated by university students and industry professionals, the program offers hands‑on learning beyond the standard curriculum to motivate students toward STEM careers.",
+    "short_description": "Conducting hands-on STEM workshops in underprivileged schools to motivate students toward STEM careers.",
+    "sdgs": [4],
+    "started": "2023-01",
+    "cover_image": "/images/bg2.webp",
+    "logo": "/images/logos/nenasa.png",
+    "related_initiatives": [
+      "nenasa-stem-workshops-2024"
+    ]
+  },
+  {
+    "id": "filter-of-hope",
+    "slug": "foh",
+    "name": "Filter of Hope",
+    "subtitle": "Customized RO filter for safe drinking water.",
+    "description": "IEEE Sri Lanka Section SIGHT installs customized reverse‑osmosis filtration systems, tailored to local water quality based on laboratory analysis of 31 parameters (e.g., nitrates, arsenic, bacteriology), at schools or communal wells in CKDu‑affected villages. The initiative includes infrastructure upgrades, community training, and ongoing water‑quality monitoring. It improves health, reduces CKDu risk, increases school attendance, and builds local capacity.",
+    "short_description": "Installing customized reverse-osmosis filtration systems tailored to local water quality in CKDu-affected villages.",
+    "sdgs": [6, 4, 10],
+    "started": "2022-12",
+    "cover_image": "/images/bg6.webp",
+    "logo": "/images/logos/foh.png",
+    "related_initiatives": [
+      "filter-of-hope-phase-03-eppawala-2024",
+      "filter-of-hope-phase-02"
+    ]
+  },
+  {
+    "id": "sihinayata-peraman",
+    "slug": "sp",
+    "name": "Sihinayata Peraman",
+    "subtitle": "Career, innovation, and leadership for underserved youth.",
+    "description": "\"Sihinayata Peraman,\" recognized as Best Affinity Group Project (2022), delivers career guidance, innovation, and leadership training to students from underprivileged backgrounds. The program equips them with knowledge and skills to explore STEM and leadership pathways.",
+    "short_description": "Delivering career guidance, innovation, and leadership training to students from underprivileged backgrounds.",
+    "sdgs": [4, 9],
+    "started": "2022-08",
+    "cover_image": "/images/bg1.webp",
+    "logo": "/images/logos/sp.png",
+    "related_initiatives": []
+  }
+]

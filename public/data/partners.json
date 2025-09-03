@@ -1,0 +1,123 @@
+[
+  {
+    "slug": "sea-sri-lanka",
+    "name": "Sustainable Energy Authority of Sri Lanka",
+    "type": "partnership",
+    "logo": "/images/partners/seasl.jpg",
+    "url": null,
+    "description": "Partnership on renewable energy education and community projects.",
+    "since": null,
+    "status": "active",
+    "tags": ["government", "energy"]
+  },
+  {
+    "slug": "ifs",
+    "name": "IFS",
+    "type": "partnership",
+    "logo": null,
+    "url": null,
+    "description": "Industry collaboration on education and community technology projects.",
+    "since": null,
+    "status": "active",
+    "tags": ["industry"]
+  },
+  {
+    "slug": "magicbit",
+    "name": "MagicBit",
+    "type": "partnership",
+    "logo": null,
+    "url": null,
+    "description": "Educational technology platform partnerships for STEM learning initiatives.",
+    "since": null,
+    "status": "active",
+    "tags": ["education", "technology"]
+  },
+  {
+    "slug": "the-makers",
+    "name": "The Makers",
+    "type": "partnership",
+    "logo": null,
+    "url": null,
+    "description": "Maker space collaboration for hands-on learning and innovation projects.",
+    "since": null,
+    "status": "active",
+    "tags": ["education", "innovation"]
+  },
+  {
+    "slug": "gavesha",
+    "name": "Gavesha",
+    "type": "partnership",
+    "logo": null,
+    "url": null,
+    "description": "Research collaboration on sustainable technology solutions.",
+    "since": null,
+    "status": "active",
+    "tags": ["research"]
+  },
+  {
+    "slug": "wma-western-province",
+    "name": "Waste Management Authority of Western Province",
+    "type": "partnership",
+    "logo": null,
+    "url": null,
+    "description": "Collaboration on waste management education and sustainability initiatives.",
+    "since": null,
+    "status": "active",
+    "tags": ["government", "sustainability"]
+  },
+  {
+    "slug": "ieee-htb",
+    "name": "IEEE Humanitarian Technologies Board",
+    "type": "ieee",
+    "logo": null,
+    "url": "https://ieeeht.org",
+    "description": "Programs, funding pathways, and knowledge sharing for humanitarian technology.",
+    "since": null,
+    "status": "active",
+    "tags": ["global"]
+  },
+  {
+    "slug": "ieee-r10-hta",
+    "name": "IEEE Region 10 Humanitarian Technology Activities",
+    "type": "ieee",
+    "logo": null,
+    "url": "https://r10.ieee.org",
+    "description": "Regional coordination and support for humanitarian technology initiatives.",
+    "since": null,
+    "status": "active",
+    "tags": ["regional"]
+  },
+  {
+    "slug": "ieee-ias",
+    "name": "IEEE Industry Applications Society",
+    "type": "ieee",
+    "logo": null,
+    "url": "https://ias.ieee.org",
+    "description": "Technical expertise and industry connections for practical applications.",
+    "since": null,
+    "status": "active",
+    "tags": ["technical"]
+  },
+  {
+    "slug": "deep-tec-engineering",
+    "name": "Deep Tec Engineering (Pvt) Ltd",
+    "type": "supporter",
+    "logo": null,
+    "url": null,
+    "description": "Discounted pricing and field support for deployments.",
+    "since": null,
+    "status": "active",
+    "tags": ["supplier"]
+  },
+  {
+    "slug": "maheweli-chemicals",
+    "name": "Maheweli Chemicals Kent Minerals RO (Pvt) Ltd",
+    "type": "supporter",
+    "logo": null,
+    "url": null,
+    "description": "Water treatment equipment and technical support for clean water projects.",
+    "since": null,
+    "status": "active",
+    "tags": ["supplier"]
+  }
+]

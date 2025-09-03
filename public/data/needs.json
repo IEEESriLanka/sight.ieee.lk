@@ -1,0 +1,41 @@
+[
+  {
+    "slug": "ro-filter-renovation-rural-schools",
+    "title": "RO Filter Renovation for Rural Schools",
+    "problem": "Access to clean drinking water remains a critical need in many rural schools, where outdated or non-functional Reverse Osmosis (RO) systems put students' health at risk.",
+    "suggested_solution": "Renovate and upgrade existing RO filtration units, ensuring safe and uninterrupted water access for schoolchildren and teaching staff.",
+    "sdgs": [3, 6],
+    "contacts": [
+      {
+        "name": "IEEE Sri Lanka Section SIGHT",
+        "email": "sightsl@ieee.org"
+      }
+    ]
+  },
+  {
+    "slug": "library-equipment-management-rural-schools",
+    "title": "Library Equipment & Management System for Rural Schools",
+    "problem": "Many rural schools lack well-equipped libraries, limiting students' access to essential learning resources.",
+    "suggested_solution": "Supply library furniture, shelving, digital cataloging systems, and basic reading materials alongside a user-friendly library management system.",
+    "sdgs": [4],
+    "contacts": [
+      {
+        "name": "IEEE Sri Lanka Section SIGHT",
+        "email": "sightsl@ieee.org"
+      }
+    ]
+  },
+  {
+    "slug": "mangrove-mapping-conservation-awareness",
+    "title": "Mangrove Mapping and Conservation Awareness Project",
+    "problem": "Mangroves serve as vital coastal ecosystems that support biodiversity and protect against erosion, yet many remain undocumented or poorly preserved.",
+    "suggested_solution": "Use GIS tools and community-led surveys to map mangrove forests, alongside educational workshops for mangrove conservation and sustainable environmental practices.",
+    "sdgs": [13, 14],
+    "contacts": [
+      {
+        "name": "IEEE Sri Lanka Section SIGHT",
+        "email": "sightsl@ieee.org"
+      }
+    ]
+  }
+]
