@@ -217,7 +217,7 @@ const Header: React.FC<HeaderProps> = ({ showMetaNav = true }) => {
                 </span>
                 <span className="font-bold text-xs text-gray-600 leading-tight truncate">
                   <span className="hidden xs:inline">Special Interest Group on Humanitarian Technology (SIGHT)</span>
-                  <span className="xs:hidden">SIG in Humanitarian Technology</span>
+                  <span className="xs:hidden">SIG on Humanitarian Technology</span>
                 </span>
               </div>
             </Link>
