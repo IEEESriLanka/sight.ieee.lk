@@ -8,6 +8,7 @@ import About from './pages/About';
 import Home from './pages/Home';
 import Initiatives from './pages/Initiatives';
 import Needs from './pages/Needs';
+import NotFound from './pages/NotFound';
 import Partners from './pages/Partners';
 import Projects from './pages/Projects';
 import SDGAction from './pages/SDGAction';
@@ -86,6 +87,9 @@ function App() {
             <Route path="/support" element={<Support />} />
             <Route path="/about" element={<About />} />
             <Route path="/partners" element={<Partners />} />
+            
+            {/* Catch-all route for 404 pages */}
+            <Route path="*" element={<NotFound />} />
           </Routes>
         </main>
         <Footer />
