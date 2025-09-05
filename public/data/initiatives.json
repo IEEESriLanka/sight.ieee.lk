@@ -1223,7 +1223,7 @@
     "title": "Renovation of RO Filter System at Saivapragasa Ladies College, Vavuniya | Filter of Hope #6",
     "related_sdgs": [6],
     "related_sdg_targets": ["6.1"],
-    "image": "/images/foh-ro-filter-renovation-vavuniya.jpg",
+    "image": ["/images/foh-ro-filter-renovation-vavuniya.jpg", "/images/foh-ro-filter-renovation-vavuniya-2.jpg", "/images/foh-ro-filter-renovation-vavuniya-3.jpg", "/images/foh-ro-filter-renovation-vavuniya-4.jpg", "/images/foh-ro-filter-renovation-vavuniya-5.jpg"],
     "slug": "foh-ro-filter-renovation-vavuniya",
     "content": "IEEE Sri Lanka Section SIGHT renovated an existing RO filter system at Saivapragasa Ladies College, Vavuniya. The work included replacing the membrane (Vontron) and installing a 200GPD pump, restoring the system’s full functionality.\n\nWith the renovation completed, students and the surrounding community now have continued access to safe and clean drinking water, strengthening health and daily well-being. This effort highlights the group’s dedication to maintaining and sustaining essential clean water solutions.",
     "date": "2025-09-05",

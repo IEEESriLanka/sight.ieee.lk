@@ -3,6 +3,7 @@ import { ArrowLeft, Building, Calendar, DollarSign, ExternalLink, MapPin, Users 
 import React, { useEffect, useState } from 'react';
 import { Link, useNavigate, useParams } from 'react-router-dom';
 import type { Initiative, OrganizingUnit, Partner } from '../types';
+import ImageGallery from './ImageGallery';
 import InitiativeCard from './InitiativeCard';
 import SDGBadge from './SDGBadge';
 
@@ -324,6 +325,18 @@ const InitiativeDetail: React.FC = () => {
                 )}
               </div>
             )}
+
+            {/* Image Gallery */}
+            {(() => {
+              const images = Array.isArray(initiative.image) ? initiative.image : (initiative.image ? [initiative.image] : []);
+              return (
+                <ImageGallery
+                  images={images}
+                  alt={initiative.title}
+                  title={initiative.title}
+                />
+              );
+            })()}
 
             {(initiative.link || initiative.vtools_event_url) && (
               <div className="bg-white rounded-lg shadow-sm p-6">
