@@ -1,10 +1,10 @@
 [
   {
-    "id": "sdg-sprint",
-    "slug": "sdg-sprint",
-    "name": "SDG Sprint",
+    "id": "sdg-sprints",
+    "slug": "sdg-sprints",
+    "name": "SDG Sprints",
     "subtitle": "Co-creating solutions for community challenges.",
-    "description": "Organized by IEEE Sri Lanka Section SIGHT with the Sustainable Development Council of Sri Lanka, the SDG Design Sprint brings together university students, young engineers, and community representatives to ideate and design practical humanitarian technology projects aligned with the UN Sustainable Development Goals. The initiative fosters innovation, collaboration, and capacity building by connecting grassroots needs with engineering talent.",
+    "description": "Organized by IEEE Sri Lanka Section SIGHT with the guidance of Sustainable Development Council of Sri Lanka, the SDG Sprints brings together university students, young engineers, and community representatives to ideate and design practical humanitarian technology projects aligned with the UN Sustainable Development Goals. The initiative fosters innovation, collaboration, and capacity building by connecting grassroots needs with engineering talent.",
     "short_description": "Co-creating innovative solutions for community challenges through collaborative design sprints.",
     "sdgs": [3, 4, 6, 7, 11, 13, 17],
     "started": "2025-08",

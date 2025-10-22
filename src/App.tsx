@@ -77,7 +77,7 @@ function App() {
             <Route path="/foh" element={<Navigate to="/projects/foh" replace />} />
             <Route path="/nenasa" element={<Navigate to="/projects/nenasa" replace />} />
             <Route path="/sp" element={<Navigate to="/projects/sp" replace />} />
-            <Route path="/sdg-sprint" element={<Navigate to="/projects/sdg-sprint" replace />} />
+            <Route path="/sdg-sprints" element={<Navigate to="/projects/sdg-sprints" replace />} />
 
             <Route path="/initiatives" element={<Initiatives />} />
             <Route path="/initiatives/:slug" element={<InitiativeDetail />} />
