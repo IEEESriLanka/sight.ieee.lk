@@ -16,10 +16,10 @@ const Footer: React.FC = () => {
                 />
                 <div className="flex flex-col">
                   <span className="font-bold text-white text-lg">
-                    IEEE Sri Lanka Section
+                    IEEE Sri Lanka Section SIGHT
                   </span>
                   <span className="font-bold text-sm text-gray-300">
-                    Special Interest Group on Humanitarian Technology (SIGHT)
+                    Special Interest Group on Humanitarian Technology
                   </span>
                 </div>
               </div>
