@@ -1,5 +1,18 @@
 [
   {
+    "id": "planet-pulse",
+    "slug": "planet-pulse",
+    "name": "Planet Pulse",
+    "subtitle": "Sustainable, tech and non-tech initiatives for the planet.",
+    "description": "Planet Pulse is a collaborative initiative dedicated to protecting and revitalizing the Earth by aligning with SDGs 12, 13, 14, and 15. It begins with community-driven, non-technical actions promoting sustainable consumption, climate awareness, and conservation. Over time, it expands into tech-driven innovations—leveraging data, IoT, and AI for environmental monitoring, circular economy solutions, and climate resilience.",
+    "short_description": "Sustainability, innovation, and harmony between people and the planet.",
+    "sdgs": [12, 13, 14, 15],
+    "started": "2025-10",
+    "cover_image": "/images/green-pulse-mangrove-restoration-koggala-2.jpg",
+    "logo": "/images/logos/planet-pulse.png",
+    "related_initiatives": []
+  },
+  {
     "id": "sdg-sprints",
     "slug": "sdg-sprints",
     "name": "SDG Sprints",
@@ -9,7 +22,7 @@
     "sdgs": [3, 4, 6, 7, 11, 13, 17],
     "started": "2025-08",
     "cover_image": "/images/bg4.webp",
-    "logo": "/images/sdgs/sdg.webp",
+    "logo": "/images/logos/sdg-sprints.png",
     "related_initiatives": [
     ]
   },
