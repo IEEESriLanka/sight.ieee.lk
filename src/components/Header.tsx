@@ -1,9 +1,7 @@
 import {
   ChevronDown,
-  ChevronRight,
   Cog,
   Droplets,
-  ExternalLink,
   GraduationCap,
   Handshake,
   Leaf,
@@ -13,7 +11,7 @@ import {
 } from "lucide-react";
 import React, { useEffect, useState } from "react";
 import { Link, useLocation } from "react-router-dom";
-import { Cause, Project, Resource } from "../types";
+import { Cause, Project } from "../types";
 
 // Map icon names to actual icon components
 const iconMap: Record<string, React.ComponentType<{ className?: string }>> = {
@@ -34,6 +32,8 @@ const Header: React.FC<HeaderProps> = ({ showMetaNav = true }) => {
   const [expandedSections, setExpandedSections] = useState<Set<string>>(
     new Set()
   );
+  const [isMegaMenuOpen, setIsMegaMenuOpen] = useState(false);
+  const [menuCloseTimeout, setMenuCloseTimeout] = useState<number | null>(null);
   const [impactAreas, setImpactAreas] = useState<
     Array<{
       name: string;
@@ -45,7 +45,7 @@ const Header: React.FC<HeaderProps> = ({ showMetaNav = true }) => {
   const [featuredProjects, setFeaturedProjects] = useState<
     Array<{ name: string; href: string; logo: string }>
   >([]);
-  const [resourceLinks, setResourceLinks] = useState<Resource[]>([]);
+  
 
   const location = useLocation();
 
@@ -59,9 +59,33 @@ const Header: React.FC<HeaderProps> = ({ showMetaNav = true }) => {
     setExpandedSections(newExpanded);
   };
 
+  const handleMenuEnter = () => {
+    if (menuCloseTimeout) {
+      clearTimeout(menuCloseTimeout);
+      setMenuCloseTimeout(null);
+    }
+    setIsMegaMenuOpen(true);
+  };
+
+  const handleMenuLeave = () => {
+    const timeout = setTimeout(() => {
+      setIsMegaMenuOpen(false);
+    }, 150); // 150ms delay
+    setMenuCloseTimeout(timeout);
+  };
+
+  const closeMegaMenu = () => {
+    if (menuCloseTimeout) {
+      clearTimeout(menuCloseTimeout);
+      setMenuCloseTimeout(null);
+    }
+    setIsMegaMenuOpen(false);
+  };
+
   const navigation = [
     { name: "Home", href: "/" },
-    { name: "Our Initiatives", href: "/initiatives", isDropdown: true },
+    { name: "Impact Areas", href: "/initiatives", isDropdown: true },
+    { name: "Projects", href: "/initiatives", isDropdown: true },
     { name: "SDGs in Action", href: "/sdg/", isDropdown: true },
     { name: "Support Us", href: "/support", isDropdown: true },
     { name: "About", href: "/about", isDropdown: true },
@@ -118,32 +142,17 @@ const Header: React.FC<HeaderProps> = ({ showMetaNav = true }) => {
     fetchFeaturedProjects();
   }, []);
 
-  // Load resource links from resources.json
+  
+
+  // Cleanup timeout on unmount
   useEffect(() => {
-    const fetchResourceLinks = async () => {
-      try {
-        const response = await fetch("/data/resources.json");
-        const resourcesData: Resource[] = await response.json();
-        setResourceLinks(resourcesData);
-      } catch (error) {
-        console.error("Error fetching resource links:", error);
-        // Fallback to empty array if fetch fails
-        setResourceLinks([]);
+    return () => {
+      if (menuCloseTimeout) {
+        clearTimeout(menuCloseTimeout);
       }
     };
+  }, [menuCloseTimeout]);
 
-    fetchResourceLinks();
-  }, []);
-
-  const volunteerYears = [
-    { name: "All Volunteers", href: "/volunteers" },
-    { name: "2025", href: "/volunteers?year=2025" },
-    { name: "2024", href: "/volunteers?year=2024" },
-    { name: "2023", href: "/volunteers?year=2023" },
-    { name: "2022", href: "/volunteers?year=2022" },
-    { name: "2021", href: "/volunteers?year=2021" },
-    { name: "2020", href: "/volunteers?year=2020" },
-  ];
 
   const allSDGs = [
     { code: "1", short_name: "No Poverty" },
@@ -172,38 +181,306 @@ const Header: React.FC<HeaderProps> = ({ showMetaNav = true }) => {
     return location.pathname.startsWith(href);
   };
 
-  const closeDropdowns = () => {
-    // Force close all dropdowns by triggering a blur event
-    const activeElement = document.activeElement as HTMLElement;
-    if (activeElement) {
-      activeElement.blur();
-    }
-  };
 
   return (
     <header className={`bg-white shadow-sm z-50 transition-all duration-300 ease-in-out ${
       showMetaNav ? 'sticky top-0' : 'fixed top-0 left-0 right-0'
     }`}>
-      {/* Desktop Dropdown Styles */}
+      {/* Mega Menu Styles */}
       <style
         dangerouslySetInnerHTML={{
           __html: `
-          .dropdown:hover .dropdown-menu {
+          .mega-menu.open {
             opacity: 1;
             visibility: visible;
             transform: translateY(0);
           }
-          .dropdown:not(:hover) .dropdown-menu {
+          .mega-menu {
             opacity: 0;
             visibility: hidden;
             transform: translateY(8px);
-            transition-delay: 150ms;
+            transition: all 0.2s ease-in-out;
           }
         `,
         }}
       />
       <nav className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex justify-between items-center h-16">
+        {/* 2x2 Grid Layout for Desktop */}
+        <div className="hidden md:grid md:grid-rows-2 md:gap-x-6 md:gap-y-0 md:min-h-[64px] md:py-1" style={{gridTemplateColumns: 'auto 1fr'}}>
+          {/* Column 1 - SIGHT Logo (spans both rows) */}
+          <div className="row-span-2 flex items-center">
+            <Link to="/" className="flex items-center">
+              <img
+                src="/images/logos/sight-sl-logo.png"
+                alt="IEEE Sri Lanka Section SIGHT"
+                className="h-12 lg:h-16 w-auto flex-shrink-0"
+              />
+            </Link>
+          </div>
+
+          {/* Column 2, Row 1 - Organization Text + IEEE Logo */}
+          <div className="flex items-center justify-between">
+            <div className="flex items-center">
+              <span className="font-bold text-gray-900 text-sm lg:text-base leading-tight whitespace-nowrap">
+                IEEE Sri Lanka Section SIGHT | Special Interest Group on Humanitarian Technology
+              </span>
+            </div>
+            
+            {/* IEEE Master Brand */}
+            <div className="flex items-center ml-4 flex-shrink-0">
+              <a 
+                href="https://www.ieee.org/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center"
+                aria-label="IEEE"
+              >
+                <img 
+                  src="/images/logos/ieee-logo.png" 
+                  alt="IEEE" 
+                  className="h-[33px] w-auto min-w-[100px] max-w-[120px] object-contain"
+                  style={{
+                    // Clear space: 1/2x where x=height of letters I-E-E-E (approximately 16.5px)
+                    margin: '8.25px'
+                  }}
+                />
+              </a>
+            </div>
+          </div>
+
+          {/* Column 2, Row 2 - Desktop Navigation */}
+          <div className="flex items-center relative">
+            <div 
+              className="flex items-baseline justify-between w-full mega-menu-trigger"
+              onMouseEnter={handleMenuEnter}
+              onMouseLeave={handleMenuLeave}
+            >
+              {navigation.map((item) => {
+                // Simple link items
+                if (!item.isDropdown) {
+                  return (
+                    <Link
+                      key={item.name}
+                      to={item.href}
+                      onClick={() => window.scrollTo(0, 0)}
+                      className={`pr-1 lg:pr-2 py-2 rounded-md text-sm font-medium transition-colors whitespace-nowrap ${
+                        isActive(item.href)
+                          ? "bg-blue-100 text-blue-700"
+                          : "text-gray-600 hover:text-gray-900 hover:bg-gray-50"
+                      }`}
+                    >
+                      {item.name}
+                    </Link>
+                  );
+                }
+
+                // All dropdown items - simplified for mega menu
+                return (
+                  <button
+                    key={item.name}
+                    className={`px-1 lg:px-2 py-2 rounded-md text-sm font-medium transition-colors whitespace-nowrap ${
+                      isActive(item.href)
+                        ? "bg-blue-100 text-blue-700"
+                        : "text-gray-600 hover:text-gray-900 hover:bg-gray-50"
+                    }`}
+                  >
+                    {item.name}
+                    <ChevronDown className="ml-1 h-4 w-4 inline" />
+                  </button>
+                );
+              })}
+            </div>
+
+            {/* Mega Menu Panel */}
+            <div 
+              className={`mega-menu absolute top-full left-0 right-0 mt-2 bg-white rounded-lg shadow-lg border border-gray-200 z-50 ${isMegaMenuOpen ? 'open' : ''}`}
+              onMouseEnter={handleMenuEnter}
+              onMouseLeave={handleMenuLeave}
+            >
+              <div className="max-w-7xl mx-auto p-6">
+                <div className="grid grid-cols-5 gap-8">
+                  
+                  {/* Impact Areas Column */}
+                  <div>
+                    <h3 className="font-semibold text-gray-900 mb-4">Impact Areas</h3>
+                    <div className="space-y-2">
+                      <Link
+                        to="/initiatives"
+                        onClick={closeMegaMenu}
+                        className="block text-sm text-gray-600 hover:text-gray-900 hover:bg-gray-50 px-2 py-1 rounded"
+                      >
+                        All Impact Areas
+                      </Link>
+                      {impactAreas.map((area) => (
+                        <Link
+                          key={area.code}
+                          to={area.href}
+                          onClick={closeMegaMenu}
+                          className="block text-sm text-gray-600 hover:text-gray-900 hover:bg-gray-50 px-2 py-1 rounded"
+                        >
+                          <span className="flex items-center space-x-3">
+                            <div className="w-4 h-4 flex items-center justify-center flex-shrink-0">
+                              {area.icon && <area.icon className="w-4 h-4" />}
+                            </div>
+                            <span className="flex-1">{area.name}</span>
+                          </span>
+                        </Link>
+                      ))}
+                    </div>
+                  </div>
+
+                  {/* Projects Column */}
+                  <div>
+                    <h3 className="font-semibold text-gray-900 mb-4">Projects</h3>
+                    <div className="space-y-2">
+                      <Link
+                        to="/initiatives"
+                        onClick={closeMegaMenu}
+                        className="block text-sm text-gray-600 hover:text-gray-900 hover:bg-gray-50 px-2 py-1 rounded"
+                      >
+                        All Project Initiatives
+                      </Link>
+                      {featuredProjects.slice(0, 6).map((project) => (
+                        <Link
+                          key={project.href}
+                          to={project.href}
+                          onClick={closeMegaMenu}
+                          className="block text-sm text-gray-600 hover:text-gray-900 hover:bg-gray-50 px-2 py-1 rounded"
+                        >
+                          <span className="flex items-center space-x-3">
+                            <div className="w-4 h-4 flex items-center justify-center flex-shrink-0">
+                              <img
+                                src={project.logo}
+                                alt={`${project.name} logo`}
+                                className="w-4 h-4 object-contain"
+                                onError={(e) => {
+                                  const target = e.target as HTMLImageElement;
+                                  target.style.display = "none";
+                                }}
+                              />
+                            </div>
+                            <span className="flex-1">{project.name}</span>
+                          </span>
+                        </Link>
+                      ))}
+                    </div>
+                  </div>
+
+                  {/* SDGs Column */}
+                  <div>
+                    <h3 className="font-semibold text-gray-900 mb-4">SDGs in Action</h3>
+                    <div className="space-y-2">
+                      <Link
+                        to="/sdg/4"
+                        onClick={closeMegaMenu}
+                        className="block text-sm text-gray-600 hover:text-gray-900 hover:bg-gray-50 px-2 py-1 rounded"
+                      >
+                        All SDGs Overview
+                      </Link>
+                      {allSDGs.filter(sdg => ["4", "6", "9", "12", "13", "17"].includes(sdg.code)).map((sdg) => (
+                        <Link
+                          key={sdg.code}
+                          to={`/sdg/${sdg.code}`}
+                          onClick={closeMegaMenu}
+                          className="block text-sm text-gray-600 hover:text-gray-900 hover:bg-gray-50 px-2 py-1 rounded"
+                        >
+                          <span className="flex items-center space-x-3">
+                            <div className="w-6 h-4 flex items-center justify-center flex-shrink-0">
+                              <img
+                                src={`/images/sdgs/E Inverted Icons_WEB-${sdg.code.padStart(2, "0")}.png`}
+                                alt={`SDG ${sdg.code}`}
+                                className="w-6 h-4 object-contain"
+                                onError={(e) => {
+                                  const target = e.target as HTMLImageElement;
+                                  target.style.display = "none";
+                                }}
+                              />
+                            </div>
+                            <span className="text-sm leading-tight flex-1">{sdg.short_name}</span>
+                          </span>
+                        </Link>
+                      ))}
+                    </div>
+                  </div>
+
+                  {/* Support Us Column */}
+                  <div>
+                    <h3 className="font-semibold text-gray-900 mb-4">Support Us</h3>
+                    <div className="space-y-2">
+                      <Link
+                        to="/needs"
+                        onClick={closeMegaMenu}
+                        className="block text-sm text-gray-600 hover:text-gray-900 hover:bg-gray-50 px-2 py-1 rounded"
+                      >
+                        Look for Community Needs
+                      </Link>
+                      <a
+                        href="/support#donate"
+                        onClick={closeMegaMenu}
+                        className="block text-sm text-gray-600 hover:text-gray-900 hover:bg-gray-50 px-2 py-1 rounded"
+                      >
+                        Donate to a Cause
+                      </a>
+                      <a
+                        href="/support#volunteer"
+                        onClick={closeMegaMenu}
+                        className="block text-sm text-gray-600 hover:text-gray-900 hover:bg-gray-50 px-2 py-1 rounded"
+                      >
+                        Volunteer as an Individual
+                      </a>
+                      <a
+                        href="/support#sight-group"
+                        onClick={closeMegaMenu}
+                        className="block text-sm text-gray-600 hover:text-gray-900 hover:bg-gray-50 px-2 py-1 rounded"
+                      >
+                        Start a SIGHT Group
+                      </a>
+                    </div>
+                  </div>
+
+                  {/* About Column */}
+                  <div>
+                    <h3 className="font-semibold text-gray-900 mb-4">About</h3>
+                    <div className="space-y-2">
+                      <Link
+                        to="/about"
+                        onClick={closeMegaMenu}
+                        className="block text-sm text-gray-600 hover:text-gray-900 hover:bg-gray-50 px-2 py-1 rounded"
+                      >
+                        About SIGHT
+                      </Link>
+                      <Link
+                        to="/volunteers"
+                        onClick={closeMegaMenu}
+                        className="block text-sm text-gray-600 hover:text-gray-900 hover:bg-gray-50 px-2 py-1 rounded"
+                      >
+                        Our Volunteers
+                      </Link>
+                      <Link
+                        to="/partners"
+                        onClick={closeMegaMenu}
+                        className="block text-sm text-gray-600 hover:text-gray-900 hover:bg-gray-50 px-2 py-1 rounded"
+                      >
+                        Our Partners
+                      </Link>
+                      <Link
+                        to="/resources"
+                        onClick={closeMegaMenu}
+                        className="block text-sm text-gray-600 hover:text-gray-900 hover:bg-gray-50 px-2 py-1 rounded"
+                      >
+                        IEEE SIGHT Resources
+                      </Link>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        {/* Mobile Layout */}
+        <div className="md:hidden flex justify-between items-center h-16">
           <div className="flex items-center flex-shrink-0">
             <Link to="/" className="flex items-center space-x-2">
               <img
@@ -223,394 +500,8 @@ const Header: React.FC<HeaderProps> = ({ showMetaNav = true }) => {
             </Link>
           </div>
 
-          {/* IEEE Master Brand - Alternative placement in header */}
-          <div className="hidden xl:flex items-center ml-4 flex-shrink-0">
-            <a 
-              href="https://www.ieee.org/"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="flex items-center"
-              aria-label="IEEE"
-            >
-              <img 
-                src="/images/logos/ieee-logo.png" 
-                alt="IEEE" 
-                className="h-[33px] w-auto min-w-[100px] max-w-[120px] object-contain"
-                style={{
-                  // Clear space: 1/2x where x=height of letters I-E-E-E (approximately 16.5px)
-                  margin: '8.25px'
-                }}
-              />
-            </a>
-          </div>
-
-          {/* Desktop Navigation */}
-          <div className="hidden md:block flex-1">
-            <div className="flex items-baseline justify-end space-x-1 lg:space-x-3">
-              {navigation.map((item) => {
-                // Home - simple link
-                if (item.name === "Home") {
-                  return (
-                    <Link
-                      key={item.name}
-                      to={item.href}
-                      onClick={() => window.scrollTo(0, 0)}
-                      className={`px-1 lg:px-2 py-2 rounded-md text-sm font-medium transition-colors whitespace-nowrap ${
-                        isActive(item.href)
-                          ? "bg-blue-100 text-blue-700"
-                          : "text-gray-600 hover:text-gray-900 hover:bg-gray-50"
-                      }`}
-                    >
-                      {item.name}
-                    </Link>
-                  );
-                }
-
-                // Our Initiatives Dropdown
-                if (item.name === "Our Initiatives") {
-                  return (
-                    <div key={item.name} className="relative dropdown">
-                      <button
-                        className={`px-1 lg:px-2 py-2 rounded-md text-sm font-medium transition-colors flex items-center whitespace-nowrap ${
-                          isActive("/initiatives") ||
-                          isActive("/foh") ||
-                          isActive("/nenasa") ||
-                          isActive("/sp")
-                            ? "bg-blue-100 text-blue-700"
-                            : "text-gray-600 hover:text-gray-900 hover:bg-gray-50"
-                        }`}
-                      >
-                        Our Initiatives
-                        <ChevronDown className="ml-1 h-4 w-4" />
-                      </button>
-
-                      <div className="dropdown-menu absolute right-0 lg:left-0 mt-2 w-64 bg-white rounded-md shadow-lg border border-gray-200 opacity-0 invisible transform translate-y-2 transition-all duration-200 z-50">
-                        <div className="py-2">
-                          <Link
-                            to="/initiatives"
-                            onClick={() => window.scrollTo(0, 0)}
-                            className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 font-medium"
-                            onMouseDown={closeDropdowns}
-                          >
-                            Explore All Initiatives
-                          </Link>
-
-                          <div className="border-t border-gray-100 my-2"></div>
-
-                          <div className="relative group">
-                            <div className="flex items-center justify-between px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 cursor-pointer">
-                              <span className="font-medium">Impact Areas</span>
-                              <ChevronRight className="h-4 w-4" />
-                            </div>
-
-                            <div className="absolute left-full top-0 w-56 bg-white rounded-md shadow-lg border border-gray-200 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50">
-                              <div className="py-2">
-                                {impactAreas.map((area) => (
-                                  <Link
-                                    key={area.code}
-                                    to={area.href}
-                                    onClick={() => window.scrollTo(0, 0)}
-                                    className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
-                                    onMouseDown={closeDropdowns}
-                                  >
-                                    <span className="flex items-center space-x-3">
-                                      {area.icon && (
-                                        <area.icon className="w-5 h-5 flex-shrink-0" />
-                                      )}
-                                      <span className="flex-1">
-                                        {area.name}
-                                      </span>
-                                    </span>
-                                  </Link>
-                                ))}
-                              </div>
-                            </div>
-                          </div>
-
-                          <div className="relative group">
-                            <div className="flex items-center justify-between px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 cursor-pointer">
-                              <span className="font-medium">
-                                Featured Projects
-                              </span>
-                              <ChevronRight className="h-4 w-4" />
-                            </div>
-
-                            <div className="absolute left-full top-0 w-48 bg-white rounded-md shadow-lg border border-gray-200 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50">
-                              <div className="py-2">
-                                {featuredProjects.map((project) => (
-                                  <Link
-                                    key={project.href}
-                                    to={project.href}
-                                    onClick={() => window.scrollTo(0, 0)}
-                                    className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
-                                    onMouseDown={closeDropdowns}
-                                  >
-                                    <span className="flex items-center space-x-3">
-                                      <img
-                                        src={project.logo}
-                                        alt={`${project.name} logo`}
-                                        className="w-5 h-5 object-contain flex-shrink-0"
-                                        onError={(e) => {
-                                          const target =
-                                            e.target as HTMLImageElement;
-                                          target.style.display = "none";
-                                        }}
-                                      />
-                                      <span className="flex-1">
-                                        {project.name}
-                                      </span>
-                                    </span>
-                                  </Link>
-                                ))}
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  );
-                }
-
-                // SDGs in Action Dropdown
-                if (item.name === "SDGs in Action") {
-                  return (
-                    <div key={item.name} className="relative dropdown">
-                      <button
-                        className={`px-1 lg:px-2 py-2 rounded-md text-sm font-medium transition-colors flex items-center whitespace-nowrap ${
-                          isActive("/sdg/")
-                            ? "bg-blue-100 text-blue-700"
-                            : "text-gray-600 hover:text-gray-900 hover:bg-gray-50"
-                        }`}
-                      >
-                        SDGs in Action
-                        <ChevronDown className="ml-1 h-4 w-4" />
-                      </button>
-
-                      <div className="dropdown-menu absolute right-0 lg:left-0 mt-2 w-80 bg-white rounded-md shadow-lg border border-gray-200 opacity-0 invisible transform translate-y-2 transition-all duration-200 z-50 max-h-96 overflow-y-auto">
-                        <div className="py-2">
-                          <Link
-                            to="/sdg/4"
-                            onClick={() => window.scrollTo(0, 0)}
-                            className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 font-medium"
-                            onMouseDown={closeDropdowns}
-                          >
-                            All SDGs Overview
-                          </Link>
-
-                          <div className="border-t border-gray-100 my-2"></div>
-
-                          {allSDGs.map((sdgItem) => (
-                            <Link
-                              key={sdgItem.code}
-                              to={`/sdg/${sdgItem.code}`}
-                              onClick={() => window.scrollTo(0, 0)}
-                              className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
-                              onMouseDown={closeDropdowns}
-                            >
-                              <span className="flex items-center space-x-3">
-                                <img
-                                  src={`/images/sdgs/E Inverted Icons_WEB-${sdgItem.code
-                                    .padStart(2, "0")}.png`}
-                                  alt={`SDG ${sdgItem.code}`}
-                                  className="w-8 h-5 object-contain flex-shrink-0"
-                                  onError={(e) => {
-                                    const target = e.target as HTMLImageElement;
-                                    target.style.display = "none";
-                                    const parent = target.parentElement!;
-                                    const fallback =
-                                      document.createElement("span");
-                                    fallback.className =
-                                      "inline-block w-8 h-5 rounded text-xs text-white text-center leading-5 bg-blue-600 font-medium flex-shrink-0";
-                                    fallback.textContent =
-                                      sdgItem.code;
-                                    parent.insertBefore(fallback, target);
-                                  }}
-                                />
-                                <span className="flex-1">
-                                  {sdgItem.short_name}
-                                </span>
-                              </span>
-                            </Link>
-                          ))}
-                        </div>
-                      </div>
-                    </div>
-                  );
-                }
-
-                // Support Us Dropdown
-                if (item.name === "Support Us") {
-                  return (
-                    <div key={item.name} className="relative dropdown">
-                      <button
-                        className={`px-1 lg:px-2 py-2 rounded-md text-sm font-medium transition-colors flex items-center whitespace-nowrap ${
-                          isActive("/support")
-                            ? "bg-blue-100 text-blue-700"
-                            : "text-gray-600 hover:text-gray-900 hover:bg-gray-50"
-                        }`}
-                      >
-                        Support Us
-                        <ChevronDown className="ml-1 h-4 w-4" />
-                      </button>
-
-                      <div className="dropdown-menu absolute right-0 lg:left-0 mt-2 w-56 bg-white rounded-md shadow-lg border border-gray-200 opacity-0 invisible transform translate-y-2 transition-all duration-200 z-50">
-                        <div className="py-2">
-                          <Link
-                            to="/needs"
-                            onClick={() => window.scrollTo(0, 0)}
-                            className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
-                            onMouseDown={closeDropdowns}
-                          >
-                            Community Needs
-                          </Link>
-                          <div className="border-t border-gray-100 my-2"></div>
-                          <a
-                            href="/support#donate"
-                            className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
-                            onMouseDown={closeDropdowns}
-                          >
-                            Donate to a Cause
-                          </a>
-                          <a
-                            href="/support#volunteer"
-                            className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
-                            onMouseDown={closeDropdowns}
-                          >
-                            Volunteer as an Individual
-                          </a>
-                          <a
-                            href="/support#sight-group"
-                            className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
-                            onMouseDown={closeDropdowns}
-                          >
-                            Start a SIGHT Group
-                          </a>
-                        </div>
-                      </div>
-                    </div>
-                  );
-                }
-
-
-
-                // About Dropdown
-                if (item.name === "About") {
-                  return (
-                    <div key={item.name} className="relative dropdown">
-                      <button
-                        className={`px-1 lg:px-2 py-2 rounded-md text-sm font-medium transition-colors flex items-center whitespace-nowrap ${
-                          isActive("/about") ||
-                          isActive("/volunteers") ||
-                          isActive("/partners") ||
-                          isActive("/resources")
-                            ? "bg-blue-100 text-blue-700"
-                            : "text-gray-600 hover:text-gray-900 hover:bg-gray-50"
-                        }`}
-                      >
-                        About
-                        <ChevronDown className="ml-1 h-4 w-4" />
-                      </button>
-
-                      <div className="dropdown-menu absolute right-0 lg:left-0 mt-2 w-64 bg-white rounded-md shadow-lg border border-gray-200 opacity-0 invisible transform translate-y-2 transition-all duration-200 z-50">
-                        <div className="py-2">
-                          <Link
-                            to="/about"
-                            onClick={() => window.scrollTo(0, 0)}
-                            className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
-                            onMouseDown={closeDropdowns}
-                          >
-                            About SIGHT
-                          </Link>
-                          
-                                                     <div className="relative group">
-                             <div className="flex items-center justify-between px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 cursor-pointer">
-                               <span>Our Volunteers</span>
-                               <ChevronRight className="h-4 w-4" />
-                             </div>
-
-                             <div className="absolute right-full top-0 w-48 bg-white rounded-md shadow-lg border border-gray-200 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50">
-                              <div className="py-2">
-                                {volunteerYears.map((yearItem, index) => (
-                                  <div key={yearItem.name}>
-                                    <Link
-                                      to={yearItem.href}
-                                      onClick={() => window.scrollTo(0, 0)}
-                                      className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
-                                      onMouseDown={closeDropdowns}
-                                    >
-                                      {yearItem.name}
-                                    </Link>
-                                    {index === 0 && (
-                                      <div className="border-t border-gray-100 my-2"></div>
-                                    )}
-                                  </div>
-                                ))}
-                              </div>
-                            </div>
-                          </div>
-
-                          <Link
-                            to="/partners"
-                            onClick={() => window.scrollTo(0, 0)}
-                            className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
-                            onMouseDown={closeDropdowns}
-                          >
-                            Our Partners
-                          </Link>
-                          
-                                                     <div className="relative group">
-                             <div className="flex items-center justify-between px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 cursor-pointer">
-                               <span>IEEE Resources</span>
-                               <ChevronRight className="h-4 w-4" />
-                             </div>
-
-                             <div className="absolute right-full top-0 w-72 bg-white rounded-md shadow-lg border border-gray-200 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50">
-                              <div className="py-2">
-                                {resourceLinks.map((resource) => (
-                                  <a
-                                    key={resource.name}
-                                    href={resource.href}
-                                    target="_blank"
-                                    rel="noopener noreferrer"
-                                    className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
-                                    onMouseDown={closeDropdowns}
-                                  >
-                                    <span className="flex items-center justify-between">
-                                      <span>{resource.name}</span>
-                                      <ExternalLink className="h-3 w-3 text-gray-400" />
-                                    </span>
-                                  </a>
-                                ))}
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  );
-                }
-
-                // Simple links (should not reach here with current navigation)
-                return (
-                  <Link
-                    key={item.name}
-                    to={item.href}
-                    onClick={() => window.scrollTo(0, 0)}
-                    className={`px-1 lg:px-2 py-2 rounded-md text-sm font-medium transition-colors whitespace-nowrap ${
-                      isActive(item.href)
-                        ? "bg-blue-100 text-blue-700"
-                        : "text-gray-600 hover:text-gray-900 hover:bg-gray-50"
-                    }`}
-                  >
-                    {item.name}
-                  </Link>
-                );
-              })}
-            </div>
-          </div>
-
           {/* Mobile menu button */}
-          <div className="md:hidden">
+          <div>
             <button
               onClick={() => {
                 setIsMenuOpen(!isMenuOpen);
@@ -701,8 +592,8 @@ const Header: React.FC<HeaderProps> = ({ showMetaNav = true }) => {
                     {/* Expandable Content */}
                     {isExpanded && (
                       <div className="pl-4 space-y-1">
-                        {/* Our Initiatives Content */}
-                        {item.name === "Our Initiatives" && (
+                        {/* Impact Areas Content */}
+                        {item.name === "Impact Areas" && (
                           <>
                             <Link
                               to="/initiatives"
@@ -712,39 +603,53 @@ const Header: React.FC<HeaderProps> = ({ showMetaNav = true }) => {
                               }}
                               className="block px-3 py-2 rounded-md text-sm text-gray-600 hover:text-gray-900 hover:bg-gray-50"
                             >
-                              All Initiatives
+                              All Impact Areas
                             </Link>
 
+                            <div className="text-xs font-medium text-gray-500 px-3 py-1 mt-2">
+                              Browse by Area
+                            </div>
+                            {impactAreas.slice(0, 4).map((area) => (
+                              <Link
+                                key={area.code}
+                                to={area.href}
+                                onClick={() => {
+                                  setIsMenuOpen(false);
+                                  window.scrollTo(0, 0);
+                                }}
+                                className="block px-3 py-2 rounded-md text-sm text-gray-600 hover:text-gray-900 hover:bg-gray-50"
+                              >
+                                <span className="flex items-center space-x-3">
+                                  <div className="w-4 h-4 flex items-center justify-center flex-shrink-0">
+                                    {area.icon && (
+                                      <area.icon className="w-4 h-4" />
+                                    )}
+                                  </div>
+                                  <span className="flex-1">{area.name}</span>
+                                </span>
+                              </Link>
+                            ))}
+                          </>
+                        )}
+
+                        {/* Projects Content */}
+                        {item.name === "Projects" && (
+                          <>
                             <Link
-                              to="/"
-                              onClick={(e) => {
+                              to="/initiatives"
+                              onClick={() => {
                                 setIsMenuOpen(false);
-                                // If we're already on home page, just scroll to impact areas
-                                if (window.location.pathname === "/") {
-                                  e.preventDefault();
-                                  const element =
-                                    document.getElementById("impact-areas");
-                                  if (element) {
-                                    element.scrollIntoView({
-                                      behavior: "smooth",
-                                      block: "start",
-                                    });
-                                  }
-                                }
-                                // If we're on a different page, navigate to home and then scroll
-                                else {
-                                  window.location.href = "/#impact-areas";
-                                }
+                                window.scrollTo(0, 0);
                               }}
                               className="block px-3 py-2 rounded-md text-sm text-gray-600 hover:text-gray-900 hover:bg-gray-50"
                             >
-                              Impact Areas
+                              All Project Initiatives
                             </Link>
 
                             <div className="text-xs font-medium text-gray-500 px-3 py-1 mt-2">
                               Featured Projects
                             </div>
-                            {featuredProjects.map((project) => (
+                            {featuredProjects.slice(0, 4).map((project) => (
                               <Link
                                 key={project.href}
                                 to={project.href}
@@ -755,16 +660,18 @@ const Header: React.FC<HeaderProps> = ({ showMetaNav = true }) => {
                                 className="block px-3 py-2 rounded-md text-sm text-gray-600 hover:text-gray-900 hover:bg-gray-50"
                               >
                                 <span className="flex items-center space-x-3">
-                                  <img
-                                    src={project.logo}
-                                    alt={`${project.name} logo`}
-                                    className="w-5 h-5 object-contain flex-shrink-0"
-                                    onError={(e) => {
-                                      const target =
-                                        e.target as HTMLImageElement;
-                                      target.style.display = "none";
-                                    }}
-                                  />
+                                  <div className="w-5 h-5 flex items-center justify-center flex-shrink-0">
+                                    <img
+                                      src={project.logo}
+                                      alt={`${project.name} logo`}
+                                      className="w-5 h-5 object-contain"
+                                      onError={(e) => {
+                                        const target =
+                                          e.target as HTMLImageElement;
+                                        target.style.display = "none";
+                                      }}
+                                    />
+                                  </div>
                                   <span className="flex-1">{project.name}</span>
                                 </span>
                               </Link>
@@ -790,7 +697,7 @@ const Header: React.FC<HeaderProps> = ({ showMetaNav = true }) => {
                               Quick Access SDGs
                             </div>
                             {allSDGs
-                              .filter((sdg) => ["4", "6", "13"].includes(sdg.code))
+                              .filter((sdg) => ["4", "6", "9", "12", "13", "17"].includes(sdg.code))
                               .map((sdgItem) => (
                                 <Link
                                   key={sdgItem.code}
@@ -801,27 +708,29 @@ const Header: React.FC<HeaderProps> = ({ showMetaNav = true }) => {
                                   }}
                                   className="block px-3 py-2 rounded-md text-sm text-gray-600 hover:text-gray-900 hover:bg-gray-50"
                                 >
-                                  <span className="flex items-center space-x-2">
-                                    <img
-                                      src={`/images/sdgs/E Inverted Icons_WEB-${sdgItem.code
-                                        .padStart(2, "0")}.png`}
-                                      alt={`SDG ${sdgItem.code}`}
-                                      className="w-5 h-3 object-contain flex-shrink-0"
-                                      onError={(e) => {
-                                        const target =
-                                          e.target as HTMLImageElement;
-                                        target.style.display = "none";
-                                        const parent = target.parentElement!;
-                                        const fallback =
-                                          document.createElement("span");
-                                        fallback.className =
-                                          "inline-block w-5 h-3 rounded text-xs text-white text-center leading-3 bg-blue-600 flex-shrink-0";
-                                        fallback.textContent =
-                                          sdgItem.code;
-                                        parent.insertBefore(fallback, target);
-                                      }}
-                                    />
-                                    <span className="flex-1 text-xs">
+                                  <span className="flex items-center space-x-3">
+                                    <div className="w-6 h-4 flex items-center justify-center flex-shrink-0">
+                                      <img
+                                        src={`/images/sdgs/E Inverted Icons_WEB-${sdgItem.code
+                                          .padStart(2, "0")}.png`}
+                                        alt={`SDG ${sdgItem.code}`}
+                                        className="w-6 h-4 object-contain"
+                                        onError={(e) => {
+                                          const target =
+                                            e.target as HTMLImageElement;
+                                          target.style.display = "none";
+                                          const parent = target.parentElement!;
+                                          const fallback =
+                                            document.createElement("span");
+                                          fallback.className =
+                                            "inline-block w-6 h-4 rounded text-sm text-white text-center leading-4 bg-blue-600 flex items-center justify-center";
+                                          fallback.textContent =
+                                            sdgItem.code;
+                                          parent.insertBefore(fallback, target);
+                                        }}
+                                      />
+                                    </div>
+                                    <span className="flex-1 text-sm leading-tight">
                                       {sdgItem.short_name}
                                     </span>
                                   </span>
@@ -841,7 +750,7 @@ const Header: React.FC<HeaderProps> = ({ showMetaNav = true }) => {
                               }}
                               className="block px-3 py-2 rounded-md text-sm text-gray-700 hover:text-gray-900 hover:bg-gray-50"
                             >
-                              Community Needs
+                              Look for Community Needs
                             </Link>
                             <div className="border-t border-gray-100 my-2"></div>
                             <a
@@ -884,51 +793,16 @@ const Header: React.FC<HeaderProps> = ({ showMetaNav = true }) => {
                               About SIGHT
                             </Link>
                             
-                            {/* Our Volunteers with submenu */}
-                            <div className="space-y-1">
-                              <button
-                                onClick={() => toggleSection("Our Volunteers")}
-                                className="w-full flex items-center justify-between px-3 py-2 rounded-md text-sm text-gray-700 hover:text-gray-900 hover:bg-gray-50"
-                              >
-                                <span>Our Volunteers</span>
-                                <ChevronDown
-                                  className={`h-4 w-4 transition-transform ${
-                                    expandedSections.has("Our Volunteers") ? "transform rotate-180" : ""
-                                  }`}
-                                />
-                              </button>
-                              
-                              {expandedSections.has("Our Volunteers") && (
-                                <div className="pl-4 space-y-1">
-                                  <Link
-                                    to="/volunteers"
-                                    onClick={() => {
-                                      setIsMenuOpen(false);
-                                      window.scrollTo(0, 0);
-                                    }}
-                                    className="block px-3 py-2 rounded-md text-sm font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50"
-                                  >
-                                    All Volunteers
-                                  </Link>
-                                  <div className="text-xs font-medium text-gray-500 px-3 py-1 mt-2">
-                                    By Year
-                                  </div>
-                                  {volunteerYears.slice(1, 4).map((yearItem) => (
-                                    <Link
-                                      key={yearItem.name}
-                                      to={yearItem.href}
-                                      onClick={() => {
-                                        setIsMenuOpen(false);
-                                        window.scrollTo(0, 0);
-                                      }}
-                                      className="block px-3 py-2 rounded-md text-sm text-gray-600 hover:text-gray-900 hover:bg-gray-50"
-                                    >
-                                      {yearItem.name}
-                                    </Link>
-                                  ))}
-                                </div>
-                              )}
-                            </div>
+                            <Link
+                              to="/volunteers"
+                              onClick={() => {
+                                setIsMenuOpen(false);
+                                window.scrollTo(0, 0);
+                              }}
+                              className="block px-3 py-2 rounded-md text-sm text-gray-700 hover:text-gray-900 hover:bg-gray-50"
+                            >
+                              Our Volunteers
+                            </Link>
                             
                             <Link
                               to="/partners"
@@ -941,45 +815,16 @@ const Header: React.FC<HeaderProps> = ({ showMetaNav = true }) => {
                               Our Partners
                             </Link>
                             
-                            {/* IEEE Resources with submenu */}
-                            <div className="space-y-1">
-                              <button
-                                onClick={() => toggleSection("IEEE Resources")}
-                                className="w-full flex items-center justify-between px-3 py-2 rounded-md text-sm text-gray-700 hover:text-gray-900 hover:bg-gray-50"
-                              >
-                                <span>IEEE Resources</span>
-                                <ChevronDown
-                                  className={`h-4 w-4 transition-transform ${
-                                    expandedSections.has("IEEE Resources") ? "transform rotate-180" : ""
-                                  }`}
-                                />
-                              </button>
-                              
-                              {expandedSections.has("IEEE Resources") && (
-                                <div className="pl-4 space-y-1">
-                                  <div className="text-xs font-medium text-gray-500 px-3 py-1">
-                                    External Links
-                                  </div>
-                                  {resourceLinks.slice(0, 4).map((resource) => (
-                                    <a
-                                      key={resource.name}
-                                      href={resource.href}
-                                      target="_blank"
-                                      rel="noopener noreferrer"
-                                      onClick={() => setIsMenuOpen(false)}
-                                      className="block px-3 py-2 rounded-md text-sm text-gray-600 hover:text-gray-900 hover:bg-gray-50"
-                                    >
-                                      <span className="flex items-center justify-between">
-                                        <span className="text-xs">
-                                          {resource.name}
-                                        </span>
-                                        <ExternalLink className="h-3 w-3 text-gray-400" />
-                                      </span>
-                                    </a>
-                                  ))}
-                                </div>
-                              )}
-                            </div>
+                            <Link
+                              to="/resources"
+                              onClick={() => {
+                                setIsMenuOpen(false);
+                                window.scrollTo(0, 0);
+                              }}
+                              className="block px-3 py-2 rounded-md text-sm text-gray-700 hover:text-gray-900 hover:bg-gray-50"
+                            >
+                              IEEE SIGHT Resources
+                            </Link>
                           </>
                         )}
                       </div>

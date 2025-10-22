@@ -13,6 +13,7 @@ import Partners from './pages/Partners';
 import Projects from './pages/Projects';
 import SDGAction from './pages/SDGAction';
 import Support from './pages/Support';
+import Resources from './pages/Resources';
 import Volunteers from './pages/Volunteers';
 
 function App() {
@@ -85,6 +86,7 @@ function App() {
             <Route path="/needs" element={<Needs />} />
             <Route path="/volunteers" element={<Volunteers />} />
             <Route path="/support" element={<Support />} />
+            <Route path="/resources" element={<Resources />} />
             <Route path="/about" element={<About />} />
             <Route path="/partners" element={<Partners />} />
             

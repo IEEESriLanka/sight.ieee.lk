@@ -111,6 +111,7 @@ export interface Cause {
 export interface Resource {
   name: string;
   href: string;
+  type: 'educational' | 'funding';
 }
 
 export interface SDGMetadata {

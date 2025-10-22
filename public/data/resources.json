@@ -1,26 +1,37 @@
 [
   {
     "name": "Humanitarian Technologies Modules",
-    "href": "https://iln.ieee.org/public/contentdetails.aspx?id=C19BF142209144468F681624D11AED5D"
+    "href": "https://iln.ieee.org/public/contentdetails.aspx?id=C19BF142209144468F681624D11AED5D",
+    "type": "educational"
   },
   {
     "name": "Best Practices Repository",
-    "href": "https://ieeeht.org/knowledge-hub/best-practices-repository/"
+    "href": "https://ieeeht.org/knowledge-hub/best-practices-repository/",
+    "type": "educational"
   },
   {
     "name": "Tech4Good Funding Opportunities",
-    "href": "https://ieeeht.org/get-involved/funding-opportunities/tech4good/"
+    "href": "https://ieeeht.org/get-involved/funding-opportunities/tech4good/",
+    "type": "funding"
   },
   {
     "name": "Call for Service Learning Projects",
-    "href": "https://epics.ieee.org/"
+    "href": "https://epics.ieee.org/",
+    "type": "funding"
   },
   {
     "name": "STEM Education Resources",
-    "href": "https://tryengineering.org/"
+    "href": "https://tryengineering.org/",
+    "type": "educational"
   },
   {
     "name": "Humanitarian Technologies Consortium",
-    "href": "https://ieeeht.org/programs/consortium/"
+    "href": "https://ieeeht.org/programs/consortium/",
+    "type": "educational"
+  },
+  {
+    "name": "IEEE Region 10 R10 HTA Supporting Fund",
+    "href": "https://www.facebook.com/ieeer10hac/",
+    "type": "funding"
   }
 ]
