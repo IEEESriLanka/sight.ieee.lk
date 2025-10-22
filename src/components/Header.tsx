@@ -450,6 +450,13 @@ const Header: React.FC<HeaderProps> = ({ showMetaNav = true }) => {
                         About SIGHT
                       </Link>
                       <Link
+                        to="/initiatives?search=annual+general+meeting"
+                        onClick={closeMegaMenu}
+                        className="block text-sm text-gray-600 hover:text-gray-900 hover:bg-gray-50 px-2 py-1 rounded"
+                      >
+                        SIGHT Governance
+                      </Link>
+                      <Link
                         to="/volunteers"
                         onClick={closeMegaMenu}
                         className="block text-sm text-gray-600 hover:text-gray-900 hover:bg-gray-50 px-2 py-1 rounded"
@@ -788,6 +795,17 @@ const Header: React.FC<HeaderProps> = ({ showMetaNav = true }) => {
                               className="block px-3 py-2 rounded-md text-sm text-gray-700 hover:text-gray-900 hover:bg-gray-50"
                             >
                               About SIGHT
+                            </Link>
+                            
+                            <Link
+                              to="/initiatives?search=annual+general+meeting"
+                              onClick={() => {
+                                setIsMenuOpen(false);
+                                window.scrollTo(0, 0);
+                              }}
+                              className="block px-3 py-2 rounded-md text-sm text-gray-700 hover:text-gray-900 hover:bg-gray-50"
+                            >
+                              SIGHT Governance
                             </Link>
                             
                             <Link
