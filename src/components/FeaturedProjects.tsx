@@ -37,7 +37,7 @@ const FeaturedProjects: React.FC = () => {
         </div>
 
         {loading ? (
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {[1, 2, 3, 4].map((i) => (
               <div key={i} className="bg-white rounded-lg shadow-md overflow-hidden h-full">
                 <div className="p-8 animate-pulse">
@@ -51,7 +51,7 @@ const FeaturedProjects: React.FC = () => {
             ))}
           </div>
         ) : (
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {projects.map((project, index) => (
               <motion.div
                 key={project.id}

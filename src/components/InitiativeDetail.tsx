@@ -2,7 +2,7 @@ import { motion } from 'framer-motion';
 import { ArrowLeft, Building, Calendar, DollarSign, ExternalLink, MapPin, Users } from 'lucide-react';
 import React, { useEffect, useState } from 'react';
 import { Link, useNavigate, useParams } from 'react-router-dom';
-import type { Initiative, OrganizingUnit, Partner } from '../types';
+import type { Initiative, OrganizingUnit, Partner, Project } from '../types';
 import ImageGallery from './ImageGallery';
 import InitiativeCard from './InitiativeCard';
 import SDGBadge from './SDGBadge';
@@ -11,6 +11,7 @@ const InitiativeDetail: React.FC = () => {
   const { slug } = useParams<{ slug: string }>();
   const navigate = useNavigate();
   const [initiative, setInitiative] = useState<Initiative | null>(null);
+  const [matchedProject, setMatchedProject] = useState<Project | null>(null);
 
   const [relatedInitiatives, setRelatedInitiatives] = useState<Initiative[]>([]);
   const [organizers, setOrganizers] = useState<OrganizingUnit[]>([]);
@@ -24,8 +25,12 @@ const InitiativeDetail: React.FC = () => {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const initiativesResponse = await fetch('/data/initiatives.json');
+        const [initiativesResponse, projectsResponse] = await Promise.all([
+          fetch('/data/initiatives.json'),
+          fetch('/data/projects.json')
+        ]);
         const initiativesData = await initiativesResponse.json();
+        const projectsData = await projectsResponse.json();
         
         const foundInitiative = initiativesData.find((init: Initiative) => init.slug === slug);
 
@@ -64,6 +69,14 @@ const InitiativeDetail: React.FC = () => {
           };
 
           setInitiative(processedInitiative);
+
+          // Find matching project if initiative has a project field
+          if (processedInitiative.project) {
+            const project = projectsData.find((proj: Project) => proj.id === processedInitiative.project);
+            setMatchedProject(project || null);
+          } else {
+            setMatchedProject(null);
+          }
 
           // Organizers and supporters are not available in the new format, so we'll show empty arrays
           setOrganizers([]);
@@ -380,7 +393,45 @@ const InitiativeDetail: React.FC = () => {
             transition={{ duration: 0.6, delay: 0.4 }}
             className="space-y-6"
           >
-
+            {/* Related Project */}
+            {matchedProject && (
+              <div className="bg-white rounded-lg shadow-sm p-6 hover:shadow-md transition-shadow">
+                <h4 className="font-semibold text-gray-900 mb-4">Related Project</h4>
+                <Link
+                  to={`/projects/${matchedProject.slug}`}
+                  onClick={() => window.scrollTo(0, 0)}
+                  className="block group"
+                >
+                  <div className="flex items-center space-x-4">
+                    <div className="w-16 h-16 bg-blue-50 rounded-lg flex items-center justify-center p-2 flex-shrink-0">
+                      <img
+                        src={matchedProject.logo}
+                        alt={`${matchedProject.name} logo`}
+                        className="w-full h-full object-contain"
+                        onError={(e) => {
+                          const target = e.target as HTMLImageElement;
+                          target.style.display = 'none';
+                          const parent = target.parentElement!;
+                          parent.innerHTML = `
+                            <div class="w-full h-full bg-blue-600 rounded-lg flex items-center justify-center">
+                              <span class="text-white font-bold text-lg">${matchedProject.name.charAt(0)}</span>
+                            </div>
+                          `;
+                        }}
+                      />
+                    </div>
+                    <div className="flex-1 min-w-0">
+                      <h5 className="text-lg font-bold text-gray-900 group-hover:text-blue-600 transition-colors mb-1">
+                        {matchedProject.name}
+                      </h5>
+                      <p className="text-sm text-gray-600 line-clamp-2">
+                        {matchedProject.subtitle}
+                      </p>
+                    </div>
+                  </div>
+                </Link>
+              </div>
+            )}
 
             {/* Investment */}
             {initiative.investment && (

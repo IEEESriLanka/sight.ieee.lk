@@ -187,6 +187,19 @@ const Projects: React.FC = () => {
             transition={{ duration: 0.6, delay: 0.4 }}
             className="space-y-6"
           >
+            {/* Project Logo (Large) */}
+            <div className="bg-white rounded-lg shadow-sm p-6 flex items-center justify-center">
+              <img
+                src={project.logo}
+                alt={`${project.name} logo`}
+                className="h-28 md:h-36 lg:h-40 w-auto object-contain"
+                onError={(e) => {
+                  const target = e.target as HTMLImageElement;
+                  target.style.display = "none";
+                }}
+              />
+            </div>
+
             {/* Timeline */}
             <div className="bg-white rounded-lg shadow-sm p-6">
               <h4 className="font-semibold text-gray-900 mb-3 flex items-center">

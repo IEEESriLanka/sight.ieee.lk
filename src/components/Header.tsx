@@ -127,7 +127,7 @@ const Header: React.FC<HeaderProps> = ({ showMetaNav = true }) => {
         // Transform projects data to match featuredProjects format
         const transformedProjects = projectsData.map((project) => ({
           name: project.name,
-          href: `/${project.slug}`,
+          href: `/projects/${project.slug}`,
           logo: project.logo,
         }));
 
@@ -490,7 +490,7 @@ const Header: React.FC<HeaderProps> = ({ showMetaNav = true }) => {
               />
               <div className="flex flex-col min-w-0">
                 <span className="font-bold text-gray-900 text-xs sm:text-sm leading-tight truncate">
-                  IEEE Sri Lanka Section
+                  IEEE Sri Lanka Section SIGHT
                 </span>
                 <span className="font-bold text-xs text-gray-600 leading-tight truncate">
                   <span className="hidden xs:inline">Special Interest Group on Humanitarian Technology (SIGHT)</span>
@@ -646,10 +646,7 @@ const Header: React.FC<HeaderProps> = ({ showMetaNav = true }) => {
                               All Project Initiatives
                             </Link>
 
-                            <div className="text-xs font-medium text-gray-500 px-3 py-1 mt-2">
-                              Featured Projects
-                            </div>
-                            {featuredProjects.slice(0, 4).map((project) => (
+                            {featuredProjects.map((project) => (
                               <Link
                                 key={project.href}
                                 to={project.href}
