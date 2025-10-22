@@ -1,5 +1,15 @@
 [
   {
+    "title": "2025 R10 HTA Outstanding Section Award",
+    "organization": "IEEE Region 10 Awards",
+    "description": "Recognized as 2025 R10 HTA Outstanding Section Award for outstanding humanitarian technology initiatives and community impact.",
+    "link": "https://web.facebook.com/ieeer10hac/posts/pfbid0WEh8U7bxwwpWrA4iVmL29CHU1hhMGky2UF8VBjryJCRkQzBbP72nHnDWW3ch1qdel",
+    "icon": "Trophy",
+    "image": "/images/awards/2025-r10-hta-award.jpg",
+    "color": "text-purple-600",
+    "bgColor": "bg-purple-100"
+  },
+  {
     "title": "2024 SIGHT Group of the Year",
     "organization": "IEEE SIGHT Global Awards",
     "description": "Recognized as 2024 SIGHT Group of the Year for outstanding humanitarian technology initiatives and community impact.",
@@ -11,8 +21,8 @@
   },
   {
     "title": "2022 Best Affinity Group Project",
-    "organization": "IEEE Sri Lanka Section Awards",
-    "description": "Recognized for exceptional project execution and community engagement in humanitarian technology initiatives.",
+    "organization": "IEEE Sri Lanka Section Awrds",
+    "description": "Sihinayata Peraman recognized for exceptional project execution and community engagement in humanitarian technology initiatives.",
     "link": "https://www.facebook.com/IEEESriLanka/photos/success-is-the-result-of-perfection-hard-work-learning-from-failure-loyalty-and-/723402296240973/",
     "icon": "Award",
     "image": "/images/awards/2022-award.jpg",

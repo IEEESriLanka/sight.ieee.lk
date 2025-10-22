@@ -40,7 +40,7 @@ const ImpactRecognition: React.FC = () => {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {awards.map((award, index) => (
             <motion.div
               key={award.title}
@@ -51,6 +51,7 @@ const ImpactRecognition: React.FC = () => {
               className={`${award.bgColor} rounded-xl p-8 border border-gray-100`}
             >
               <div className="flex flex-col space-y-4">
+                {/* Header: icon + title placed side-by-side */}
                 <div className="flex items-start space-x-4">
                   <div
                     className={`${award.color} p-3 rounded-lg bg-white shadow-sm`}
@@ -60,28 +61,32 @@ const ImpactRecognition: React.FC = () => {
                       { className: "h-8 w-8" }
                     )}
                   </div>
-                  <div className="flex-1">
-                    <h3 className="text-xl font-bold text-gray-900 mb-2">
+                  <div className="min-w-0">
+                    <h3 className="text-lg md:text-xl font-bold leading-snug text-gray-900 mb-1">
                       {award.title}
                     </h3>
-                    <p className="text-sm font-medium text-gray-700 mb-3">
+                    <p className="text-sm font-medium text-gray-700">
                       {award.organization}
                     </p>
-                    <p className="text-gray-600 leading-relaxed mb-4">
-                      {award.description}
-                    </p>
-                    {award.link !== "#" && (
-                      <a
-                        href={award.link}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="inline-flex items-center text-blue-600 hover:text-blue-700 font-medium transition-colors"
-                      >
-                        Read More
-                        <ExternalLink className="ml-1 h-4 w-4" />
-                      </a>
-                    )}
                   </div>
+                </div>
+
+                {/* Full-width description and link */}
+                <div>
+                  <p className="text-gray-600 leading-relaxed mb-4">
+                    {award.description}
+                  </p>
+                  {award.link !== "#" && (
+                    <a
+                      href={award.link}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center text-blue-600 hover:text-blue-700 font-medium transition-colors"
+                    >
+                      Read More
+                      <ExternalLink className="ml-1 h-4 w-4" />
+                    </a>
+                  )}
                 </div>
                 {award.image && (
                   <div
