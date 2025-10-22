@@ -161,6 +161,86 @@ const InitiativeDetail: React.FC = () => {
     }, 500);
   };
 
+  const formatContent = (content: string) => {
+    if (!content) return null;
+
+    // URL regex pattern - matches http/https URLs
+    const urlRegex = /(https?:\/\/[^\s]+)/g;
+
+    // Split content by double newlines (paragraph breaks)
+    const paragraphs = content.split(/\n\n+/).filter(p => p.trim());
+
+    return paragraphs.map((paragraph, pIndex) => {
+      const lines = paragraph.split('\n').filter(line => line.trim());
+      
+      return (
+        <div key={pIndex} className={pIndex > 0 ? 'mt-4' : ''}>
+          {lines.map((line, lIndex) => {
+            // Check if line starts with bullet point
+            const isBulletPoint = /^[•·▪▫-]\s/.test(line.trim());
+            const lineContent = isBulletPoint ? line.trim().substring(2) : line.trim();
+
+            // Find all URL matches using matchAll (better for global regex)
+            const urlMatches = Array.from(lineContent.matchAll(urlRegex));
+
+            // Build parts array
+            const parts: React.ReactNode[] = [];
+            
+            if (urlMatches.length === 0) {
+              // No URLs, just render the line
+              parts.push(lineContent);
+            } else {
+              // Has URLs, split and create links
+              let currentIndex = 0;
+              urlMatches.forEach((match, urlIndex) => {
+                const matchIndex = match.index!;
+                const matchUrl = match[0];
+                
+                // Add text before URL
+                if (matchIndex > currentIndex) {
+                  parts.push(lineContent.substring(currentIndex, matchIndex));
+                }
+                // Add URL as link
+                parts.push(
+                  <a
+                    key={`url-${pIndex}-${lIndex}-${urlIndex}`}
+                    href={matchUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-blue-600 hover:text-blue-700 underline break-all"
+                  >
+                    {matchUrl}
+                  </a>
+                );
+                currentIndex = matchIndex + matchUrl.length;
+              });
+              // Add remaining text after last URL
+              if (currentIndex < lineContent.length) {
+                parts.push(lineContent.substring(currentIndex));
+              }
+            }
+
+            // Render line with or without bullet point styling
+            if (isBulletPoint) {
+              return (
+                <div key={lIndex} className="flex items-start mt-2 first:mt-0">
+                  <span className="text-gray-600 mr-2">•</span>
+                  <span className="flex-1 text-gray-600 leading-relaxed">{parts}</span>
+                </div>
+              );
+            }
+
+            return (
+              <p key={lIndex} className="text-gray-600 leading-relaxed mt-2 first:mt-0">
+                {parts}
+              </p>
+            );
+          })}
+        </div>
+      );
+    });
+  };
+
   if (loading) {
     return (
       <div className="min-h-screen bg-gray-50 pt-16">
@@ -323,7 +403,9 @@ const InitiativeDetail: React.FC = () => {
             {initiative.content && (
               <div className="bg-white rounded-lg shadow-sm p-6">
                 <h3 className="text-xl font-semibold text-gray-900 mb-4">Description</h3>
-                <p className="text-gray-600 leading-relaxed">{initiative.content}</p>
+                <div className="text-gray-600 leading-relaxed">
+                  {formatContent(initiative.content)}
+                </div>
                 {initiative.vtools_tags && (
                   <div className="mt-4 flex flex-wrap gap-2">
                     {initiative.vtools_tags.split(' ').map((tag, index) => (
