@@ -1194,7 +1194,7 @@
     "title": "SIGHT Launches \"SDG Sprints\": Designing Humanitarian Tech Projects for a Better Sri Lanka",
     "related_sdgs": [17],
     "related_sdg_targets": ["17.17"],
-    "image": ["/images/sdgs/sdg.webp", "/images/sdg-sprints-2025.jpg", "/images/sdg-sprints-2025-2.jpeg"],
+    "image": ["/images/sdgs/sdg.webp", "/images/sdg-sprints-2025.jpg", "/images/sdg-sprints-2025-2.jpeg", "/images/sdg-sprints-2025-3.jpg"],
     "slug": "sdg-sprints",
     "content": "The IEEE Sri Lanka Section SIGHT launched the SDG Sprints, an initiative aimed at designing innovative humanitarian technology projects to address community challenges while advancing the United Nations Sustainable Development Goals (SDGs).\n\nThe program follows the Double Diamond design process model (https://www.designcouncil.org.uk/our-resources/the-double-diamond/) and focuses on connecting engineering students with local communities to co-develop practical solutions that create measurable social impact. Through a structured four-sprint journey, participants innovate, collaborate, and create meaningful change through actionable humanitarian technology solutions.\n\nThe program structure includes:\n\n• Sprint 1 – Launchpad: Begin your journey with inspiration, orientation, and a clear vision of the SDG Sprints mission.\n\n• Sprint 2 – Research: Explore real-world challenges with communities, NGOs, and stakeholders to uncover impactful problem areas.\n\n• Sprint 3 – Design: Turn ideas into reality through ideation, prototyping, and mentorship from industry and academia.\n\n• Sprint 4 – Implementation Support: Connect your solutions with partners for real-world deployment, seed funding, and scaling opportunities.\n\nBy combining technical expertise with real-world needs, the SDG Sprints empowers students to apply their skills in meaningful ways while fostering sustainable development across Sri Lanka. The initiative was further strengthened as IEEE Sri Lanka Section SIGHT received the 2025 IEEE Region 10 HTA Supporting Fund, enabling additional resources to expand the program's reach and enhance its impact. This recognition underscores the value of the project and its potential to create scalable, sustainable humanitarian technology solutions.",
     "date": "2025-08-01",
@@ -1310,7 +1310,7 @@
     "title": "SDG Sprints Launchpad: Beginning the Journey of Innovation and Purpose",
     "related_sdgs": [17],
     "related_sdg_targets": ["17.17"],
-    "image": ["/images/sdg-sprints-2025.jpg", "/images/sdg-sprints-2025-launchpad.jpg"],
+    "image": ["/images/sdg-sprints-2025-launchpad-3.jpg", "/images/sdg-sprints-2025.jpg", "/images/sdg-sprints-2025-launchpad.jpg", "/images/sdg-sprints-2025-launchpad-2.jpg"],
     "slug": "sdg-sprints-launchpad-2025",
     "content": "The Launchpad of SDG Sprints marks the beginning of an inspiring journey where innovation meets purpose. The event brings together professionals and young innovators to explore:\n\n• Sri Lanka's SDG Journey – understanding national priorities and progress towards sustainable development.\n\n• Technology for Humanity – reimagining impact through innovative, tech-driven solutions that address real-world challenges.\n\nThis inaugural event sets the stage for Sprint 1 of the SDG Sprints program, providing participants with inspiration, orientation, and a clear vision of the SDG Sprints mission. Through interactive sessions and expert insights, attendees will gain foundational knowledge to begin their journey of creating meaningful humanitarian technology solutions aligned with the United Nations Sustainable Development Goals.",
     "date": "2025-10-31",
@@ -1361,5 +1361,44 @@
     "vtools_number_of_ieee_member_attendees": null,
     "vtools_number_of_non_member_attendees": null,
     "vtools_event_url": null
+  },
+  {
+    "type": "event",
+    "project": "sdg-sprints",
+    "title": "SDG Sprints Workshop #1: Health w/ Jendo Innovations & Education w/ Room to Read",
+    "related_sdgs": [3, 4],
+    "related_sdg_targets": ["3.b", "3.d", "4.1", "4.2", "4.6"],
+    "image": ["/images/sdg-sprints-2025-workshop-3.jpg", "/images/sdg-sprints-2025-workshop-1.jpg", "/images/sdg-sprints-2025-workshop-2.jpg", "/images/sdg-sprints-2025-workshop-4.jpg"],
+    "slug": "sdg-sprints-2025-workshop-1",
+    "content": "SDG Sprints Workshop series focused on Good Health and Well-being (SDG 3) and Quality Education (SDG 4). Unleash your creativity and be part of the transformation! Join the Workshop series of SDG Sprints, where innovation meets purpose to address Sri Lanka's most pressing community challenges. Engage in hands-on sessions, tech-driven ideas, and collaborative problem-solving with changemakers across the island. Workshop Day featured inspiring speakers who shed light on powerful ideas driving Good Health and Well-being (SDG 3), and Quality Education (SDG 4) paving the way for a healthier, educated, and sustainable world. Special thanks to Mr. Kulendra Kalimuthu, Senior Manager at Instructional Design & Teacher Support, and Mr. Keerthi Kodithuwakku, Chairman & CEO Jendo Innovations, Entrepreneur, Lecturer, and Healthcare Expert. A heartfelt thank you to all participants for showing up with purpose and heart. Together, we ignited meaningful conversations around Good Health, Quality Education, and community-driven solutions and this is only the beginning. Let's carry this momentum forward as we move to Workshop 2, think bigger, and continue creating solutions that truly matter. We're grateful to NIBM Campus for being a strong partner in this impactful mission.",
+    "date": "2025-11-15",
+    "investment": null,
+    "link": "https://forms.gle/3br8h9VpAAecKUTNA"
+  },
+  {
+    "type": "event",
+    "project": "sdg-sprints",
+    "title": "SDG Sprints Workshop #2: Zero Hunger, Clean Water, Affordable Energy, Sustainable Cities & Climate Action",
+    "related_sdgs": [2, 6, 7, 11, 13],
+    "related_sdg_targets": [],
+    "image": "/images/sdg-sprints-2025-workshop-5.jpg",
+    "slug": "sdg-sprints-2025-workshop-2",
+    "content": "Unleash your creativity and join the next chapter of the SDG Sprints journey! Workshop 2 brings powerful insights, hands-on learning, and real-world problem discovery across five critical SDGs shaping Sri Lanka's future: Zero Hunger (SDG 2), Clean Water & Sanitation (SDG 6), Affordable & Clean Energy (SDG 7), Sustainable Cities & Communities (SDG 11), and Climate Action (SDG 13). Engage in interactive sessions, explore community challenges, and collaborate with innovators and changemakers determined to build a sustainable Sri Lanka.",
+    "date": "2025-11-29",
+    "investment": null,
+    "link": "https://bit.ly/43HMF6d"
+  },
+  {
+    "type": "event",
+    "project": "nenasa",
+    "title": "IEEE Sri Lanka STEM Camp 2025: 3 day residential hands-on STEM camp for 150 students from all 9 provinces",
+    "related_sdgs": [4],
+    "related_sdg_targets": ["4.1", "4.4"],
+    "image": "/images/nenasa-stem-camp-2025.jpg",
+    "slug": "ieee-stem-camp-2025",
+    "content": "IEEE STEM Camp 2025 officially launches; bringing together bright young minds from all 9 provinces for three days of creativity, innovation, and entrepreneurial thinking. From hands-on STEM projects to real-world problem-solving, this camp sparks the ideas that shape tomorrow's Sri Lankan innovators. This nationwide STEM experience is designed to inspire and uplift students through hands-on learning, creativity, and innovation. It's a step toward shaping future problem-solvers and young innovators across Sri Lanka.",
+    "date": "2025-11-29",
+    "investment": null,
+    "link": "https://nenasa.ieee.lk/stemcamp2025"
   }
 ]
