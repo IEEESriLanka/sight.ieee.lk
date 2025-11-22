@@ -41,7 +41,7 @@ const ImageGallery: React.FC<ImageGalleryProps> = ({ images, alt, title }) => {
   return (
     <>
       <div className="bg-white rounded-lg shadow-sm p-6">
-        <h3 className="text-xl font-semibold text-gray-900 mb-4">Gallery</h3>
+        <h3 className="text-xl font-semibold text-gray-900 mb-4">{title}</h3>
         <div className="grid grid-cols-2 sm:grid-cols-3 gap-3">
           {images.map((image, index) => (
             <motion.button

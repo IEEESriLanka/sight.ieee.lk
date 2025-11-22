@@ -6,6 +6,7 @@ import type { Initiative, OrganizingUnit, Partner, Project } from '../types';
 import ImageGallery from './ImageGallery';
 import InitiativeCard from './InitiativeCard';
 import SDGBadge from './SDGBadge';
+import DynamicMetaTags from './DynamicMetaTags';
 
 const InitiativeDetail: React.FC = () => {
   const { slug } = useParams<{ slug: string }>();
@@ -287,6 +288,7 @@ const InitiativeDetail: React.FC = () => {
 
   return (
     <div className="min-h-screen bg-gray-50 pt-16">
+      <DynamicMetaTags initiative={initiative} />
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Back Button */}
         <motion.div
