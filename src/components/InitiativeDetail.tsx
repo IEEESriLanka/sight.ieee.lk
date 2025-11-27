@@ -32,7 +32,7 @@ const InitiativeDetail: React.FC = () => {
         ]);
         const initiativesData = await initiativesResponse.json();
         const projectsData = await projectsResponse.json();
-        
+
         const foundInitiative = initiativesData.find((init: Initiative) => init.slug === slug);
 
         if (foundInitiative) {
@@ -173,7 +173,7 @@ const InitiativeDetail: React.FC = () => {
 
     return paragraphs.map((paragraph, pIndex) => {
       const lines = paragraph.split('\n').filter(line => line.trim());
-      
+
       return (
         <div key={pIndex} className={pIndex > 0 ? 'mt-4' : ''}>
           {lines.map((line, lIndex) => {
@@ -186,7 +186,7 @@ const InitiativeDetail: React.FC = () => {
 
             // Build parts array
             const parts: React.ReactNode[] = [];
-            
+
             if (urlMatches.length === 0) {
               // No URLs, just render the line
               parts.push(lineContent);
@@ -196,7 +196,7 @@ const InitiativeDetail: React.FC = () => {
               urlMatches.forEach((match, urlIndex) => {
                 const matchIndex = match.index!;
                 const matchUrl = match[0];
-                
+
                 // Add text before URL
                 if (matchIndex > currentIndex) {
                   parts.push(lineContent.substring(currentIndex, matchIndex));
@@ -311,7 +311,7 @@ const InitiativeDetail: React.FC = () => {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
-          className="relative h-64 md:h-80 rounded-lg overflow-hidden mb-8"
+          className="relative min-h-[16rem] md:min-h-[20rem] rounded-lg overflow-hidden mb-8 flex flex-col justify-end bg-gray-900"
         >
           {(() => {
             const images = Array.isArray(initiative.image) ? initiative.image : (initiative.image ? [initiative.image] : []);
@@ -320,23 +320,22 @@ const InitiativeDetail: React.FC = () => {
                 <img
                   src={images[0]}
                   alt={initiative.title}
-                  className="w-full h-full object-contain"
+                  className="absolute inset-0 w-full h-full object-contain"
                   onError={(e) => {
-                  const target = e.target as HTMLImageElement;
-                  const container = target.parentElement!;
-                  if (!container) return;
-                  target.style.display = 'none';
-                  container.className = container.className.replace('overflow-hidden', '');
-                  container.innerHTML = `
+                    const target = e.target as HTMLImageElement;
+                    const container = target.parentElement!;
+                    if (!container) return;
+                    target.style.display = 'none';
+                    container.className = container.className.replace('overflow-hidden', '');
+                    container.innerHTML = `
                     <div class="w-full h-full bg-gradient-to-br from-blue-600 to-purple-700 flex items-end">
                       <div class="absolute inset-0 bg-black bg-opacity-20"></div>
                       <div class="relative z-10 p-6 w-full">
                         <div class="flex items-center mb-2">
-                          <span class="px-3 py-1 rounded-full text-xs font-medium ${
-                            initiative.type === 'project' ? 'bg-blue-100 text-blue-800' :
-                            initiative.type === 'event' ? 'bg-green-100 text-green-800' :
-                            'bg-purple-100 text-purple-800'
-                          }">
+                          <span class="px-3 py-1 rounded-full text-xs font-medium ${initiative.type === 'project' ? 'bg-blue-100 text-blue-800' :
+                        initiative.type === 'event' ? 'bg-green-100 text-green-800' :
+                          'bg-purple-100 text-purple-800'
+                      }">
                             ${initiative.type.charAt(0).toUpperCase() + initiative.type.slice(1)}
                           </span>
                         </div>
@@ -358,27 +357,26 @@ const InitiativeDetail: React.FC = () => {
                       </div>
                     </div>
                   `;
-                }}
-              />
-              <div className="absolute inset-0 bg-black bg-opacity-30" />
-            </>
-          ) : (
-            <div className="w-full h-full bg-gradient-to-br from-blue-600 to-purple-700 flex items-end">
-              <div className="absolute inset-0 bg-black bg-opacity-20" />
-            </div>
-          );
+                  }}
+                />
+                <div className="absolute inset-0 bg-black bg-opacity-30" />
+              </>
+            ) : (
+              <div className="w-full h-full bg-gradient-to-br from-blue-600 to-purple-700 flex items-end">
+                <div className="absolute inset-0 bg-black bg-opacity-20" />
+              </div>
+            );
           })()}
-          <div className="absolute bottom-6 left-6 right-6">
+          <div className="relative z-10 p-6 w-full">
             <div className="flex items-center mb-2">
-              <span className={`px-3 py-1 rounded-full text-xs font-medium ${
-                initiative.type === 'project' ? 'bg-blue-100 text-blue-800' :
+              <span className={`px-3 py-1 rounded-full text-xs font-medium ${initiative.type === 'project' ? 'bg-blue-100 text-blue-800' :
                 initiative.type === 'event' ? 'bg-green-100 text-green-800' :
-                'bg-purple-100 text-purple-800'
-              }`}>
+                  'bg-purple-100 text-purple-800'
+                }`}>
                 {initiative.type.charAt(0).toUpperCase() + initiative.type.slice(1)}
               </span>
             </div>
-            <h1 className="text-3xl md:text-4xl font-bold text-white mb-2">{initiative.title}</h1>
+            <h1 className="text-2xl md:text-4xl font-bold text-white mb-2">{initiative.title}</h1>
             <div className="flex items-center text-white text-sm">
               <Calendar className="h-4 w-4 mr-1" />
               <span>{formatDate(initiative.date)}</span>
@@ -664,7 +662,7 @@ const InitiativeDetail: React.FC = () => {
                 {getSectionTitle()}
               </h2>
               <p className="text-lg text-gray-600">
-                {getSectionTitle() === 'Related Initiatives' 
+                {getSectionTitle() === 'Related Initiatives'
                   ? 'Discover other initiatives connected to this project'
                   : 'Explore our latest humanitarian technology initiatives'
                 }
