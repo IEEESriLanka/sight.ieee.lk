@@ -32,8 +32,14 @@
     "type": "news",
     "project": "filter-of-hope",
     "title": "IEEE Humanitarian Technologies Board Supports Filter of Hope Through Tech4Good Grant",
-    "related_sdgs": [6, 9],
-    "related_sdg_targets": ["6.1", "9.5"],
+    "related_sdgs": [
+      6,
+      9
+    ],
+    "related_sdg_targets": [
+      "6.1",
+      "9.5"
+    ],
     "image": "/images/ieee-htb-tech4good-grant-filter-of-hope-2024.jpg",
     "slug": "ieee-htb-tech4good-grant-filter-of-hope-2024",
     "content": "The IEEE Humanitarian Technologies Board (HTB) extended its support to the Filter of Hope initiative of IEEE Sri Lanka Section SIGHT through the HTB Tech4Good Grant. This financial backing enabled the implementation of two impactful projects that brought sustainable access to clean water in rural Sri Lanka.\n\nAs part of this support, two schools were identified:\n\nV/Madukanda National School, Vavuniya – installation of a cutting-edge RO water filtration system (Filter of Hope #4).\n\nGemunu Central College, Kuliyapitiya – implementation of a Deep Well Solar Water Pump Project (Filter of Hope #5).\n\nThese projects addressed the urgent need for safe drinking water, improving health, supporting education, and uplifting daily life for students and surrounding communities.\n\nThe support of IEEE HTB reflects its commitment to advancing humanitarian technology and enabling sustainable community impact. Through the Filter of Hope initiative, the grant has helped transform lives, proving that every drop of clean water carries the power to bring hope and opportunity.",
@@ -61,8 +67,14 @@
     "type": "event",
     "project": "filter-of-hope",
     "title": "Deep Well Solar Water Pump at Gemunu Central College, Kuliyapitiya | Filter of Hope #5",
-    "related_sdgs": [6, 7],
-    "related_sdg_targets": ["6.1", "7.2"],
+    "related_sdgs": [
+      6,
+      7
+    ],
+    "related_sdg_targets": [
+      "6.1",
+      "7.2"
+    ],
     "image": "/images/deep-well-solar-water-pump-gemunu-central-college-filter-of-hope-phase-5.jpg",
     "slug": "deep-well-solar-water-pump-gemunu-central-college-filter-of-hope-phase-5",
     "content": "On 28 March 2025, IEEE Sri Lanka Section SIGHT launched Phase 5 of the Filter of Hope project at Gemunu Central College, Kuliyapitiya. This phase introduced a Deep Well Solar Water Pump Project, providing a sustainable solution for clean and safe drinking water.\n\nThe initiative directly addressed the urgent reality that 1 in 3 people in rural areas lack access to clean water, a basic necessity for health and well-being. By leveraging solar-powered technology, the project ensures a reliable, eco-friendly water source for students and the wider community.\n\nThe event reflected compassion, commitment, and collective action. With clean water access secured, the community stands to benefit through improved health, better support for education, and enhanced quality of daily life.\n\nThis milestone at Gemunu Central College reaffirmed IEEE SIGHT’s dedication to advancing sustainable solutions and creating brighter futures through Filter of Hope.",
@@ -79,7 +91,10 @@
     "vtools_spoid": null,
     "vtools_organizational_unit": null,
     "vtools_hosts": null,
-    "vtools_cosponsor_name": ["ieee-htb", "deep-tec-engineering"],
+    "vtools_cosponsor_name": [
+      "ieee-htb",
+      "deep-tec-engineering"
+    ],
     "vtools_tags": null,
     "vtools_virtual": null,
     "vtools_number_of_ieee_member_attendees": null,
@@ -90,8 +105,12 @@
     "type": "event",
     "project": "filter-of-hope",
     "title": "RO Water Filter to V/Madukanda National School, Vavuniya | Filter of Hope #4",
-    "related_sdgs": [6],
-    "related_sdg_targets": ["6.1"],
+    "related_sdgs": [
+      6
+    ],
+    "related_sdg_targets": [
+      "6.1"
+    ],
     "image": "/images/filter-of-hope-ro-filter-madukanda-national-school-vavuniya.jpg",
     "slug": "filter-of-hope-ro-filter-madukanda-national-school-vavuniya",
     "content": "On 28 February 2025, IEEE Sri Lanka Section SIGHT, in collaboration with the IEEE Humanitarian Technology Board, launched the Filter of Hope project at V/Madukanda National School, Vavuniya.\n\nThe event marked the inauguration of a cutting-edge RO water filtration system, ensuring students and the surrounding community gained reliable access to safe and clean drinking water. This initiative addressed a vital need in the region, improving health and well-being while supporting opportunities for a brighter future.\n\nThe project reaffirmed IEEE SIGHT’s commitment to advancing technology for humanity by delivering sustainable solutions that transform lives and empower communities across Sri Lanka.",
@@ -108,7 +127,9 @@
     "vtools_spoid": null,
     "vtools_organizational_unit": null,
     "vtools_hosts": null,
-    "vtools_cosponsor_name": ["ieee-htb"],
+    "vtools_cosponsor_name": [
+      "ieee-htb"
+    ],
     "vtools_tags": null,
     "vtools_virtual": null,
     "vtools_number_of_ieee_member_attendees": null,
@@ -119,8 +140,13 @@
     "type": "event",
     "project": "nenasa",
     "title": "Nenasa STEM Education Workshop at Nakkawatta National School, Kurunegala",
-    "related_sdgs": [4],
-    "related_sdg_targets": ["4.1", "4.4"],
+    "related_sdgs": [
+      4
+    ],
+    "related_sdg_targets": [
+      "4.1",
+      "4.4"
+    ],
     "image": "/images/nenasa-stem-education-workshop-nakkawatta-national-school-kurunegala-2025.jpg",
     "slug": "nenasa-stem-education-workshop-nakkawatta-national-school-kurunegala-2025",
     "content": null,
@@ -148,8 +174,13 @@
     "type": "event",
     "project": "nenasa",
     "title": "Nenasa STEM Education Workshop at Karagasthalawa Maha Vidyalaya, Belihuloya",
-    "related_sdgs": [4],
-    "related_sdg_targets": ["4.1", "4.4"],
+    "related_sdgs": [
+      4
+    ],
+    "related_sdg_targets": [
+      "4.1",
+      "4.4"
+    ],
     "image": "/images/nenasa-stem-education-workshop-karagasthalawa-maha-vidyalaya-belihuloya-2025.jpg",
     "slug": "nenasa-stem-education-workshop-karagasthalawa-maha-vidyalaya-belihuloya-2025",
     "content": null,
@@ -177,8 +208,13 @@
     "type": "event",
     "project": "nenasa",
     "title": "Nenasa STEM Education Workshop at University of Kelaniya as a part of CODE QUEST '24",
-    "related_sdgs": [4],
-    "related_sdg_targets": ["4.1", "4.4"],
+    "related_sdgs": [
+      4
+    ],
+    "related_sdg_targets": [
+      "4.1",
+      "4.4"
+    ],
     "image": "/images/nenasa-stem-education-workshop-university-of-kelaniya-2024.jpg",
     "slug": "nenasa-stem-education-workshop-university-of-kelaniya-2024",
     "content": null,
@@ -206,8 +242,13 @@
     "type": "event",
     "project": "nenasa",
     "title": "Nenasa STEM Education Workshop at Fathima Muslim Ladies’ College, Colombo 12",
-    "related_sdgs": [4],
-    "related_sdg_targets": ["4.1", "4.4"],
+    "related_sdgs": [
+      4
+    ],
+    "related_sdg_targets": [
+      "4.1",
+      "4.4"
+    ],
     "image": "/images/nenasa-stem-education-workshop-fathima-muslim-ladies-college-colombo12-2024.jpg",
     "slug": "nenasa-stem-education-workshop-fathima-muslim-ladies-college-colombo12-2024",
     "content": null,
@@ -224,7 +265,10 @@
     "vtools_spoid": "SIGHT114",
     "vtools_organizational_unit": "IEEE Sri Lanka Section SIGHT",
     "vtools_hosts": "SIGHT114 - IEEE Sri Lanka Section SIGHT",
-    "vtools_cosponsor_name":["ifs", "the-makers"],
+    "vtools_cosponsor_name": [
+      "ifs",
+      "the-makers"
+    ],
     "vtools_tags": "#slsight #sightsl #ieeesrilankasectionsight #awareness #STEM #session #stemeducation",
     "vtools_virtual": "No",
     "vtools_number_of_ieee_member_attendees": 2,
@@ -235,8 +279,13 @@
     "type": "event",
     "project": "nenasa",
     "title": "Nenasa STEM Education Workshop at Badulla Central College, Badulla",
-    "related_sdgs": [4],
-    "related_sdg_targets": ["4.1", "4.4"],
+    "related_sdgs": [
+      4
+    ],
+    "related_sdg_targets": [
+      "4.1",
+      "4.4"
+    ],
     "image": "/images/nenasa-stem-education-workshop-badulla-central-college-2024.jpg",
     "slug": "nenasa-stem-education-workshop-badulla-central-college-2024",
     "content": null,
@@ -253,7 +302,9 @@
     "vtools_spoid": "SIGHT114",
     "vtools_organizational_unit": "IEEE Sri Lanka Section SIGHT",
     "vtools_hosts": "SIGHT114 - IEEE Sri Lanka Section SIGHT",
-    "vtools_cosponsor_name":["ifs"],
+    "vtools_cosponsor_name": [
+      "ifs"
+    ],
     "vtools_tags": "#sightsl #ieeesl #STEM #session #stem #srilanka #awareness #ieeesrilanka #slsectionsight #ieeesrilankasectionsight #stemeducation",
     "vtools_virtual": "No",
     "vtools_number_of_ieee_member_attendees": 8,
@@ -264,8 +315,13 @@
     "type": "event",
     "project": "nenasa",
     "title": "Nenasa STEM Education Workshop at Arawwala Dharmapala Vidyalaya, Pannipitiya",
-    "related_sdgs": [4],
-    "related_sdg_targets": ["4.1", "4.4"],
+    "related_sdgs": [
+      4
+    ],
+    "related_sdg_targets": [
+      "4.1",
+      "4.4"
+    ],
     "image": "/images/nenasa-stem-education-workshop-arawwala-dharmapala-vidyalaya-pannipitiya-2024.jpg",
     "slug": "nenasa-stem-education-workshop-arawwala-dharmapala-vidyalaya-pannipitiya-2024",
     "content": null,
@@ -282,7 +338,10 @@
     "vtools_spoid": "SIGHT114",
     "vtools_organizational_unit": "IEEE Sri Lanka Section SIGHT",
     "vtools_hosts": "SIGHT114 - IEEE Sri Lanka Section SIGHT",
-    "vtools_cosponsor_name": ["ifs", "the-makers"],
+    "vtools_cosponsor_name": [
+      "ifs",
+      "the-makers"
+    ],
     "vtools_tags": "#sightsl #ieeesl #stem #ieeesrilanka #awareness #session #ieeesrilankasectionsight #stemeducation",
     "vtools_virtual": "No",
     "vtools_number_of_ieee_member_attendees": 4,
@@ -293,8 +352,13 @@
     "type": "event",
     "project": "nenasa",
     "title": "Nenasa STEM Education Workshop at A/Sri Sumangala Maha Vidyalaya, Eppawala",
-    "related_sdgs": [4],
-    "related_sdg_targets": ["4.1", "4.4"],
+    "related_sdgs": [
+      4
+    ],
+    "related_sdg_targets": [
+      "4.1",
+      "4.4"
+    ],
     "image": "/images/nenasa-stem-education-workshop-sri-sumangala-maha-vidyalaya-eppawala-2024.jpg",
     "slug": "nenasa-stem-education-workshop-sri-sumangala-maha-vidyalaya-eppawala-2024",
     "content": null,
@@ -311,7 +375,9 @@
     "vtools_spoid": "SIGHT114",
     "vtools_organizational_unit": "IEEE Sri Lanka Section SIGHT",
     "vtools_hosts": "SIGHT114 - IEEE Sri Lanka Section SIGHT",
-    "vtools_cosponsor_name": ["ifs"],
+    "vtools_cosponsor_name": [
+      "ifs"
+    ],
     "vtools_tags": "#sightsl #ieeesl #slsight #STEM #session #stem #srilanka #ieeesrilanka #awareness #education",
     "vtools_virtual": "No",
     "vtools_number_of_ieee_member_attendees": 21,
@@ -322,8 +388,13 @@
     "type": "event",
     "project": "nenasa",
     "title": "Nenasa STEM Education Workshop at Kottawa Dharmapala College, Pannipitiya",
-    "related_sdgs": [4],
-    "related_sdg_targets": ["4.1", "4.4"],
+    "related_sdgs": [
+      4
+    ],
+    "related_sdg_targets": [
+      "4.1",
+      "4.4"
+    ],
     "image": "/images/nenasa-stem-education-workshop-kottawa-dharmapala-college-pannipitiya-2024.jpg",
     "slug": "nenasa-stem-education-workshop-kottawa-dharmapala-college-pannipitiya-2024",
     "content": null,
@@ -351,8 +422,13 @@
     "type": "event",
     "project": "nenasa",
     "title": "IEEE නැණස STEM Workshop at Maguldamana Maha Vidyalaya, Dimbulagala",
-    "related_sdgs": [4],
-    "related_sdg_targets": ["4.1", "4.4"],
+    "related_sdgs": [
+      4
+    ],
+    "related_sdg_targets": [
+      "4.1",
+      "4.4"
+    ],
     "image": "/images/nenasa-maguldamana.jpg",
     "slug": "nenasa-maguldamana",
     "content": "IEEE නැණස program was conducted parallel to the Filter of Hope Opening Ceremony at Maguldamana Maha Vidyalaya, Dimbulagala. The workshop engaged school children in hands-on activities and interactive sessions aimed at strengthening their interest and skills in science, technology, engineering, and mathematics (STEM).\n\nBy providing opportunities beyond the classroom, the program encouraged curiosity, creativity, and problem-solving among students. With this session, IEEE නැණස continued its mission of making STEM education more accessible and impactful for rural schools in Sri Lanka.",
@@ -380,8 +456,13 @@
     "type": "event",
     "project": "nenasa",
     "title": "Inaugural IEEE නැණස Workshop Inspires STEM Learning at St. Mary’s College, Veyangoda",
-    "related_sdgs": [4],
-    "related_sdg_targets": ["4.1", "4.4"],
+    "related_sdgs": [
+      4
+    ],
+    "related_sdg_targets": [
+      "4.1",
+      "4.4"
+    ],
     "image": "/images/nenasa-veyangoda-st-mary",
     "slug": "nenasa-veyangoda-st-mary",
     "content": "The first workshop of “IEEE නැණස”, a collaboration between the Sri Lanka Section Student Activities Committee (SLSAC) and IEEE Sri Lanka Section SIGHT, was held on 13 January at St. Mary’s College, Veyangoda with over 120 participants.\n\nAs the pilot project of the initiative, the workshop successfully introduced school children to the world of STEM education and created enthusiasm for future learning. The program aimed to spark curiosity and broaden awareness of opportunities in science, technology, engineering, and mathematics.\n\nWith its successful start, IEEE නැණස is set to continue with more workshops, reaching a wider student community and strengthening access to STEM education across Sri Lanka.",
@@ -409,9 +490,21 @@
     "type": "event",
     "project": "planet-pulse",
     "title": "Green Pulse: Mangrove Plant Restoration at Koggala Lagoon",
-    "related_sdgs": [14, 15],
-    "related_sdg_targets": ["14.2", "15.1"],
-    "image": ["/images/green-pulse-mangrove-restoration-koggala.jpg", "/images/green-pulse-mangrove-restoration-koggala-2.jpg", "/images/green-pulse-mangrove-restoration-koggala-3.jpg", "/images/green-pulse-mangrove-restoration-koggala-4.jpg", "/images/green-pulse-mangrove-restoration-koggala-5.jpg"],
+    "related_sdgs": [
+      14,
+      15
+    ],
+    "related_sdg_targets": [
+      "14.2",
+      "15.1"
+    ],
+    "image": [
+      "/images/green-pulse-mangrove-restoration-koggala.jpg",
+      "/images/green-pulse-mangrove-restoration-koggala-2.jpg",
+      "/images/green-pulse-mangrove-restoration-koggala-3.jpg",
+      "/images/green-pulse-mangrove-restoration-koggala-4.jpg",
+      "/images/green-pulse-mangrove-restoration-koggala-5.jpg"
+    ],
     "slug": "green-pulse-mangrove-restoration-koggala",
     "content": "On 26 June, IEEE Sri Lanka Section SIGHT joined as a collaborating partner in the Green Pulse – Mangrove Plant Restoration at Koggala Lagoon. The project was organized by the GREEN SHORELINE CREW of the Department of Civil Engineering, Institute of Engineering Technology (IET) – Katunayake, 2020 batch, in partnership with Wildlife & Ocean Resources Conservation, with support from the Department of Coast Conservation and Coastal Resource Management.\n\nOur volunteers worked alongside the organizing teams to plant mangroves and to raise awareness on the importance of conserving these critical ecosystems. Mangroves protect shorelines, support biodiversity, and strengthen climate resilience for nearby communities.\n\nWe appreciate the leadership of the GREEN SHORELINE CREW and partners, and we are grateful for the opportunity to contribute to a meaningful on‑ground conservation effort aligned with SDGs 14 (Life Below Water) and 15 (Life on Land).",
     "date": "2024-06-26",
@@ -438,8 +531,14 @@
     "type": "event",
     "project": "sdg",
     "title": "Empowering a Greener Future with Sri Lanka Sustainable Energy Authority at Indurana International Training Center & Hydro Power Plant",
-    "related_sdgs": [7, 13],
-    "related_sdg_targets": ["7.2", "13.2"],
+    "related_sdgs": [
+      7,
+      13
+    ],
+    "related_sdg_targets": [
+      "7.2",
+      "13.2"
+    ],
     "image": "/images/empowering-greener-future-sustainable-energy-2024.jpg",
     "slug": "empowering-greener-future-sustainable-energy-2024",
     "content": "On 24 November 2024, IEEE Sri Lanka Section SIGHT, together with its hosting partner Sri Lanka Sustainable Energy, held the event Empowering a Greener Future Through Sustainable Energy at the Indurana International Training Center & Hydro Power Plant.\n\nThe program highlighted Sri Lanka’s transition towards renewable energy, focusing on solar, wind, water, and bioenergy as drivers of a sustainable future. A key session was delivered by Mr. Athula Bulathgama, Director of Resource Mapping at the Sri Lanka Sustainable Energy Authority, on “Transforming Waste into Energy for a Greener Sri Lanka.”\n\nParticipants gained valuable insights into the role of renewable energy and waste-to-energy innovations in creating a cleaner and more resilient country. The event emphasized community engagement and practical strategies for advancing sustainability, inspiring attendees to contribute towards a greener tomorrow.",
@@ -456,7 +555,9 @@
     "vtools_spoid": "SIGHT114",
     "vtools_organizational_unit": "IEEE Sri Lanka Section SIGHT",
     "vtools_hosts": "SIGHT114 - IEEE Sri Lanka Section SIGHT",
-    "vtools_cosponsor_name": ["sea-sri-lanka"],
+    "vtools_cosponsor_name": [
+      "sea-sri-lanka"
+    ],
     "vtools_tags": "#sightsl #ieeesrilankasection #Wastemanagement #energy #sustainability",
     "vtools_virtual": "No",
     "vtools_number_of_ieee_member_attendees": 55,
@@ -467,8 +568,14 @@
     "type": "event",
     "project": "sdg",
     "title": "Innovative Waste Management and Energy Conversion Workshop with Mr. Nalin Mannapperuma",
-    "related_sdgs": [11, 12],
-    "related_sdg_targets": ["11.6", "12.5"],
+    "related_sdgs": [
+      11,
+      12
+    ],
+    "related_sdg_targets": [
+      "11.6",
+      "12.5"
+    ],
     "image": "/images/waste-management-energy-conversion-workshop-2024.jpg",
     "slug": "waste-management-energy-conversion-workshop-2024",
     "content": "On 11 November 2024, IEEE Sri Lanka Section SIGHT hosted an online workshop on innovative waste management and energy conversion solutions. The session featured Mr. Nalin Mannapperuma, Director, Senior Environmental Engineer, member of Environmental Professionals, visiting lecturer, and dedicated social worker with extensive experience in environmental sustainability.\n\nThe workshop explored community-driven practices for effective resource recovery, focusing on how waste can be transformed into energy while reducing environmental impact. Participants gained valuable insights into sustainable waste management approaches and the role of local communities in building a cleaner and greener Sri Lanka.\n\nThis session emphasized the importance of practical, technology-driven strategies to address environmental challenges and inspired attendees to take active roles in fostering resilience and sustainability within their own communities.",
@@ -485,7 +592,9 @@
     "vtools_spoid": "SIGHT114",
     "vtools_organizational_unit": "IEEE Sri Lanka Section SIGHT",
     "vtools_hosts": "SIGHT114 - IEEE Sri Lanka Section SIGHT",
-    "vtools_cosponsor_name": ["wma-western-province"],
+    "vtools_cosponsor_name": [
+      "wma-western-province"
+    ],
     "vtools_tags": "#slsight #awareness #ieeesrilanka #ieeesrilankasectionsight #sight #wastemanagement #energy #sustainable",
     "vtools_virtual": "Yes",
     "vtools_number_of_ieee_member_attendees": 62,
@@ -496,8 +605,12 @@
     "type": "event",
     "project": "sight",
     "title": "IEEE SIGHT Awareness Session 2024 Unites Participants with Global Humanitarian Leaders",
-    "related_sdgs": [17],
-    "related_sdg_targets": ["17.17"],
+    "related_sdgs": [
+      17
+    ],
+    "related_sdg_targets": [
+      "17.17"
+    ],
     "image": "/images/ieee-sight-awareness-session-2024.jpg",
     "slug": "ieee-sight-awareness-session-2024",
     "content": "The IEEE Sri Lanka Section SIGHT Awareness Session 2024 successfully brought together over 100 participants, including international attendees, during its two-day program. The event fostered discussions on advancing technology for societal good and reinforced SIGHT’s mission to drive sustainable humanitarian initiatives.\n\nA highlight of the session was the engagement with global humanitarian leaders. Lwanga Herbert, pioneer Chair of the IEEE Humanitarian Technologies Board (HTB), shared his visionary insights on leveraging technology to address pressing global challenges. With decades of experience spearheading impactful projects worldwide, his contributions provided valuable lessons for participants seeking to create sustainable community-driven solutions.\n\nThe program also emphasized the collective responsibility of IEEE volunteers to continue innovating and collaborating for social good. By uniting diverse voices and perspectives, the Awareness Session strengthened IEEE SIGHT Sri Lanka’s role as a hub for humanitarian technology and inspired participants to carry forward the mission of advancing technology for humanity.",
@@ -525,8 +638,12 @@
     "type": "event",
     "project": "sight",
     "title": "Global SIGHT Chair Prof. Mohamed Essaaidi Speaks on Leveraging Technology for Societal Good",
-    "related_sdgs": [17],
-    "related_sdg_targets": ["17.17"],
+    "related_sdgs": [
+      17
+    ],
+    "related_sdg_targets": [
+      "17.17"
+    ],
     "image": "/images/prof-mohamed-essaaidi-sight-session-2024.jpg",
     "slug": "prof-mohamed-essaaidi-sight-session-2024",
     "content": "On 16 May 2024, IEEE Sri Lanka Section SIGHT hosted an illuminating session with Prof. Mohamed Essaaidi, Global Chair of the IEEE Special Interest Group on Humanitarian Technologies (SIGHT). The event, conducted via Zoom, provided participants with insights into how technology can be harnessed to create sustainable impact and address pressing global challenges.\n\nProf. Essaaidi, a distinguished expert in humanitarian technologies, shared his experiences from decades of work at the intersection of technology and social impact. He highlighted innovative solutions developed under SIGHT’s global initiatives and emphasized the role of volunteers in driving change within underserved communities.\n\nThe session inspired participants to explore how IEEE SIGHT empowers communities worldwide by advancing technology for humanity. It served as a valuable opportunity to connect with the broader mission of SIGHT and understand how collective action can transform lives through impactful innovation.",
@@ -554,8 +671,16 @@
     "type": "event",
     "project": "sdg",
     "title": "Energizing Change for Sustainability Workshop Explores Innovative Solutions",
-    "related_sdgs": [7, 9, 13],
-    "related_sdg_targets": ["7.2", "9.4", "13.3"],
+    "related_sdgs": [
+      7,
+      9,
+      13
+    ],
+    "related_sdg_targets": [
+      "7.2",
+      "9.4",
+      "13.3"
+    ],
     "image": "/images/energizing-change-for-sustainability-workshop-2023.jpg",
     "slug": "energizing-change-for-sustainability-workshop-2023",
     "content": "On 30 November 2023, IEEE Sri Lanka Section SIGHT organized the Energizing Change for Sustainability Workshop as part of the Empowering Communities Through Humanitarian Innovation series. The session was conducted in collaboration with the IEEE PES Sri Lanka Chapter, serving as the knowledge partner.\n\nThe workshop featured Dr. S. Harivardhagini, Head of the EIE Department at CVR College of Engineering, with over 20 years of research experience in IoT, Automation, Control Systems, and Sustainable Energy. Dr. Harivardhagini, an award-winning researcher and active IEEE contributor, shared her expertise on integrating sustainable energy solutions with community-driven innovation.\n\nParticipants gained practical knowledge to address challenges in underserved communities while engaging in hands-on activities and discussions. The workshop highlighted how sustainable approaches in energy and technology can drive long-term positive change, empowering communities through impactful, scalable solutions.",
@@ -583,8 +708,12 @@
     "type": "event",
     "project": "sdg",
     "title": "Uniting Minds for Impactful Change Workshop Concludes Empowering Communities Series",
-    "related_sdgs": [17],
-    "related_sdg_targets": ["17.17"],
+    "related_sdgs": [
+      17
+    ],
+    "related_sdg_targets": [
+      "17.17"
+    ],
     "image": "/images/uniting-minds-for-impactful-change-workshop-2023.jpg",
     "slug": "uniting-minds-for-impactful-change-workshop-2023",
     "content": "On 25 November 2023, IEEE Sri Lanka Section SIGHT conducted the Uniting Minds for Impactful Change Workshop at the Mini Auditorium, Wayamba University of Sri Lanka. This interactive physical session focused on humanitarian technology and featured talks and collaborative workshops to develop impactful community projects.\n\nThe program provided participants with practical knowledge to address challenges in underserved communities, while also drawing inspiration from transformative initiatives. Attendees engaged in hands-on activities and discussions that encouraged collaboration and the development of actionable project plans.\n\nThis workshop marked the conclusion of the Empowering Communities Through Humanitarian Innovation series. The series collectively demonstrated the power of shared knowledge and collaboration, equipping volunteers and students with tools to create sustainable community impact. IEEE Sri Lanka Section SIGHT extended sincere appreciation to all participants, speakers, and volunteers whose contributions made the workshop series a success.",
@@ -612,7 +741,10 @@
     "type": "event",
     "project": "sdg",
     "title": "Healthy Communities, Brighter Future Workshop Highlights Healthcare and Innovation",
-    "related_sdgs": [3, 9],
+    "related_sdgs": [
+      3,
+      9
+    ],
     "related_sdg_targets": "[3.8, 9.5]",
     "image": "/images/healthy-communities-brighter-future-workshop-2023.jpg",
     "slug": "healthy-communities-brighter-future-workshop-2023",
@@ -641,7 +773,9 @@
     "type": "event",
     "project": "sdg",
     "title": "Education Empowerment Workshop",
-    "related_sdgs": [4],
+    "related_sdgs": [
+      4
+    ],
     "related_sdg_targets": "[4.4, 4.1]",
     "image": "/images/education-empowerment-workshop-2023.jpg",
     "slug": "education-empowerment-workshop-2023",
@@ -670,7 +804,10 @@
     "type": "event",
     "project": "sdg",
     "title": "Humanitarian Project Design Workshop Empowers Volunteers with Practical Skills",
-    "related_sdgs": [9, 11],
+    "related_sdgs": [
+      9,
+      11
+    ],
     "related_sdg_targets": "[9.5, 11.3]",
     "image": "/images/humanitarian-project-design-workshop-2023.jpg",
     "slug": "humanitarian-project-design-workshop-2023",
@@ -699,8 +836,12 @@
     "type": "news",
     "project": "sdg",
     "title": "SIGHT Launches Sustainable Approach for Change Workshop Series",
-    "related_sdgs": [17],
-    "related_sdg_targets": ["17.17"],
+    "related_sdgs": [
+      17
+    ],
+    "related_sdg_targets": [
+      "17.17"
+    ],
     "image": "/images/sight-sustainable-change-workshop.jpg",
     "slug": "sight-sustainable-change-workshop",
     "content": "On 16 November 2023, IEEE Sri Lanka Section SIGHT organized a Workshop Series designed to empower participants with knowledge and practical skills to create meaningful community impact. The series featured five sessions:\n\nHumanitarian Project Design Workshop\n\nEmpower Through Education\n\nHealthy Communities, Brighter Future\n\nEnergizing Change\n\nUniting Minds for Impactful Change\n\nParticipants who attended, engaged, and completed each workshop were awarded a Certificate of Achievement. The program also offered additional points for those interested in joining IEEE Sri Lanka Section SIGHT with added benefits.\n\nThe initiative provided a unique opportunity for students, young professionals, and volunteers to gain insights into humanitarian technology, education, health, energy, and collaboration. By combining knowledge-sharing with hands-on engagement, the workshop series strengthened the capacity of participants to advance technology for humanity.",
@@ -728,8 +869,12 @@
     "type": "event",
     "project": "filter-of-hope",
     "title": "RO Water Filter Project at A/Sri Sumangala Maha Vidyalaya, Nabadawewa, Eppawala | Filter of Hope #3",
-    "related_sdgs": [6],
-    "related_sdg_targets": ["6.1"],
+    "related_sdgs": [
+      6
+    ],
+    "related_sdg_targets": [
+      "6.1"
+    ],
     "image": "/images/filter-of-hope-ro-filter-sri-sumangala-vidyalaya-eppawala.jpg",
     "slug": "filter-of-hope-ro-filter-sri-sumangala-vidyalaya-eppawala",
     "content": "IEEE Sri Lanka Section SIGHT, in collaboration with the IEEE IAS Sri Lanka Chapter, announced the next milestone of the Filter of Hope initiative at A/Sri Sumangala Maha Vidyalaya, Nabadawewa, Eppawala. The project will introduce a state-of-the-art RO water filtration system, ensuring students and the surrounding community have reliable access to clean and safe drinking water.\n\nThis initiative continues the mission of empowering underserved communities by addressing one of their most urgent needs—safe water. With improved health and well-being as the foundation, the project also supports brighter educational and social opportunities for students and families.\n\nBy taking this step forward, Filter of Hope reaffirms its commitment to transforming lives, proving that each drop of clean water carries the power to spark hope, growth, and a sustainable future.",
@@ -757,8 +902,12 @@
     "type": "event",
     "project": "filter-of-hope",
     "title": "RO Water Filter for Kahatagahapitiya Kanishta Vidyalaya | Filter of Hope #2",
-    "related_sdgs": [6],
-    "related_sdg_targets": ["6.1"],
+    "related_sdgs": [
+      6
+    ],
+    "related_sdg_targets": [
+      "6.1"
+    ],
     "image": "/images/foh-kahatagahapitiya.jpg",
     "slug": "foh-kahatagahapitiya",
     "content": null,
@@ -786,8 +935,12 @@
     "type": "event",
     "project": "filter-of-hope",
     "title": "Customized RO Water Filter Installed at Maguldanama Maha Vidyalaya, Dimbulagala for Peletiyawa Community | Filter of Hope #1",
-    "related_sdgs": [6],
-    "related_sdg_targets": ["6.1"],
+    "related_sdgs": [
+      6
+    ],
+    "related_sdg_targets": [
+      "6.1"
+    ],
     "image": "/images/foh-maguldamana.jpg",
     "slug": "foh-maguldamana",
     "content": "The Filter of Hope project was successfully concluded at Maguldamana Maha Vidyalaya, Dimbulagala, bringing safe drinking water to the school and surrounding community. The initiative was led by IEEE Sri Lanka Section SIGHT volunteers, who dedicated their time and expertise to addressing the urgent need for clean water in a CKDu-affected area.\n\nThe success of the project was made possible through the support of the school principal, staff, donors, and contributors whose commitment and generosity enabled the installation of the RO water filtration system. Their collective efforts ensured that students and families now have access to safe water, reducing health risks and improving daily life.\n\nThis milestone highlights the power of collaboration and community-driven action, demonstrating how sustainable solutions can create lasting impact in underserved regions. The Filter of Hope project continues to stand as a model for advancing technology for humanity while nurturing healthier and stronger communities.",
@@ -804,7 +957,9 @@
     "vtools_spoid": "SIGHT114",
     "vtools_organizational_unit": "IEEE Sri Lanka Section SIGHT",
     "vtools_hosts": "SIGHT114 - IEEE Sri Lanka Section SIGHT",
-    "vtools_cosponsor_name": ["ieee-htb"],
+    "vtools_cosponsor_name": [
+      "ieee-htb"
+    ],
     "vtools_tags": "#humanitarian #SIGHT #ieeesrilankasection #ieeesrilankasectionsight",
     "vtools_virtual": "No",
     "vtools_number_of_ieee_member_attendees": 25,
@@ -815,8 +970,13 @@
     "type": "event",
     "project": "filter-of-hope",
     "title": "Filter of Hope Awareness Session: How RO Water Purification Transforms Lives in CKDu-Affected Areas",
-    "related_sdgs": [6],
-    "related_sdg_targets": ["6.1", "6.2"],
+    "related_sdgs": [
+      6
+    ],
+    "related_sdg_targets": [
+      "6.1",
+      "6.2"
+    ],
     "image": "/images/ro-filter-awareness.jpg",
     "slug": "ro-filter-awareness",
     "content": "The Filter of Hope Awareness Session, organized by IEEE Sri Lanka Section SIGHT Group in collaboration with IEEE IAS Sri Lanka Chapter and LETs Talk – IEEE Young Professionals Sri Lanka, was held on 4 December 2022 via Zoom. The session featured Prof. Nadeeshani Nanayakkara, Professor in Civil Engineering, who shared her expertise in advanced water quality monitoring, modeling, and water treatment research, and Dr. D. U. S. Rathnapala, Consultant Nephrologist, who has served as a renal physician across four provinces while contributing as a medical educator and clinical researcher. Dr. Rathnapala highlighted the importance of awareness programs in strengthening the capacity of healthcare professionals and the public to combat kidney disease. The discussion focused on how RO water purification technology can directly improve health outcomes and enhance the livelihoods of communities in CKDu-affected areas.",
@@ -844,8 +1004,13 @@
     "type": "event",
     "project": "nenasa",
     "title": "IEEE නැණස Expands to Uva Province with STEM Workshop at Kandakepu Ulpatha Maha Vidyalaya",
-    "related_sdgs": [4],
-    "related_sdg_targets": ["4.1", "4.4"],
+    "related_sdgs": [
+      4
+    ],
+    "related_sdg_targets": [
+      "4.1",
+      "4.4"
+    ],
     "image": "/images/nenasa-kandakepu-ulpatha",
     "slug": "nenasa-kandakepu-ulpatha",
     "content": "On 4 May 2023, the “IEEE නැණස” program reached the Uva Province with a workshop at B/ Kandakepu Ulpatha Maha Vidyalaya. This initiative, organized by IEEE Sri Lanka Section SIGHT in collaboration with the IEEE Sri Lanka Section Student Activities Committee (SLSAC) and the IEEE student branches of Uva Wellassa University of Sri Lanka, Sabaragamuwa University of Sri Lanka, Open University of Sri Lanka, and Informatics Institute of Technology (IIT), aimed to make STEM education more accessible to students in rural schools.\n\nThe session provided opportunities for students to explore science, technology, engineering, and mathematics beyond their regular curriculum, helping them to overcome barriers in pursuing these fields. By creating such learning experiences, IEEE නැණස continues to inspire and empower the next generation to reach their dreams.",
@@ -873,8 +1038,13 @@
     "type": "event",
     "project": "nenasa",
     "title": "Second IEEE නැණස Workshop Held at Hapugala Maha Vidyalaya",
-    "related_sdgs": [4],
-    "related_sdg_targets": ["4.1", "4.4"],
+    "related_sdgs": [
+      4
+    ],
+    "related_sdg_targets": [
+      "4.1",
+      "4.4"
+    ],
     "image": "/images/nenasa-hapugala",
     "slug": "nenasa-hapugala",
     "content": "The second workshop of “IEEE නැණස”, a joint initiative between the Sri Lanka Section Student Activities Committee (SLSAC) and IEEE Sri Lanka Section SIGHT, was conducted on 3 May 2023 at Hapugala Maha Vidyalaya, Hapugala.\n\nThe program continued its mission of empowering STEM education among Sri Lankan school students by providing exposure to science, technology, engineering, and mathematics beyond the classroom. Building on the success of its inaugural session, this workshop further strengthened the project’s vision of inspiring curiosity and fostering innovation among young learners.",
@@ -960,8 +1130,12 @@
     "type": "event",
     "project": "sight",
     "title": "IEEE SIGHT Awareness Session with Mr. Sampathkumar Veeraraghavan",
-    "related_sdgs": [17],
-    "related_sdg_targets": ["17.17"],
+    "related_sdgs": [
+      17
+    ],
+    "related_sdg_targets": [
+      "17.17"
+    ],
     "image": "/images/sight-awareness-2022-1.jpg",
     "slug": "sight-awareness-2022-1",
     "content": "On 26 October 2022, IEEE Sri Lanka Section SIGHT successfully hosted an inspiring awareness session with Mr. Sampathkumar Veeraraghavan, 2022 Global Chair of IEEE HAC and Past Global Chair of IEEE SIGHT. The session highlighted how volunteers can bring technology-driven solutions to underserved communities, truly putting the IEEE motto “Advancing Technology for Humanity” into action. Thank you to everyone who joined and contributed to making this event a success.",
@@ -989,8 +1163,12 @@
     "type": "event",
     "project": "sihinayata-peraman",
     "title": "Community Service Project at Thudugala Sri Buddharakhithrama Watadageya Maha Viharaya",
-    "related_sdgs": [11],
-    "related_sdg_targets": ["11.4"],
+    "related_sdgs": [
+      11
+    ],
+    "related_sdg_targets": [
+      "11.4"
+    ],
     "image": "/images/sihinayata-peraman-thudugala.jpg",
     "slug": "sihinayata-peraman-thudugala",
     "content": "Community service gives us a valuable opportunity to walk into a different community that is less familiar to us but just as colorful and most importantly, in need.\nSuccessfully concluded 'සිහිනයට පෙරමං' community service project by IEEE Sri Lanka Section SIGHT Group on 14th August at Thudugala, Sri Buddharakhithrama Watadageya Maha Viharaya. Our heartfelt appreciation goes to Prof. Rangika Halwathura, Mr. Chanaka Hettige, and Mr. Layan Mendis for their unwavering support. \nAll the beautiful hearts that contributed to this project are highly appreciated. A huge thank goes to everyone involved to make this project a success. \nසිහිනයට පෙරමං ප්‍රජා සේවා ව්‍යාපෘතිය අගෝස්තු 14 වන දින තුඩුගල, ශ්‍රී බුද්ධරක්ඛිත්‍රාම වටදාගෙය මහා විහාරයේ දී  සාර්ථකව අවසන් කරන ලදී.  මහාචාර්ය රංගික හල්වතුර, චානක හෙට්ටිගේ සහ ලයාන් මෙන්ඩිස් යන මහත්වරුන් අප හට ලබා දුන් නොමද සහය වෙනුවෙන් අපගේ හද පිරි ප්‍රශංසාව හිමිවේ. මෙම ව්‍යාපෘතිය සාර්ථක කර ගැනීමට සම්බන්ධ වූ ඔබ සැමට අපගේ හද පිරි ස්තුතිය පුදකර සිටිමු.\nடிரீம் ஃபார்வர்ட் சமூக சேவைத் திட்டம் ஆகஸ்ட் 14 அன்று துடுகல ஸ்ரீ புத்தரக்கித்ரமா வடடகேய மகா விகாரையில் வெற்றிகரமாக நிறைவு பெற்றது.  பேராசிரியர் ரங்கிகா ஹல்வத்துர, சானக ஹெட்டிகே மற்றும் லியான் மெண்டிஸ் ஆகியோர் தங்களின் அன்பான ஆதரவிற்கு நன்றி தெரிவிக்கின்றனர்.  இத்திட்டம் வெற்றியடைய உறுதுணையாக இருந்த உங்கள் அனைவருக்கும் எங்களது மனமார்ந்த நன்றிகள்.",
@@ -1047,7 +1225,9 @@
     "type": "news",
     "project": "sight",
     "title": "Formation of IEEE SIGHT Group in Sri Lanka",
-    "related_sdgs": [17],
+    "related_sdgs": [
+      17
+    ],
     "related_sdg_targets": [],
     "image": "/images/sight-sl-approved.jpg",
     "slug": "sight-sl-approved",
@@ -1105,8 +1285,14 @@
     "type": "news",
     "project": "filter-of-hope",
     "title": "IEEE IAS Sri Lanka Chapter Joins Hands with IEEE SIGHT to Expand Filter of Hope",
-    "related_sdgs": [6, 17],
-    "related_sdg_targets": ["6.1", "17.17"],
+    "related_sdgs": [
+      6,
+      17
+    ],
+    "related_sdg_targets": [
+      "6.1",
+      "17.17"
+    ],
     "image": "/images/foh-ias-sl-partner.jpg",
     "slug": "foh-ias-sl-partner",
     "content": "The Filter of Hope project expanded with the financial support of the global IEEE Industry Applications Society (IAS) through IEEE IAS Sri Lanka Chapter, strengthening its mission to provide sustainable access to clean water in underserved communities.\n\nTwo schools were identified for this phase of the initiative: Kahatagahapitiya Vidyalaya, Attanakadawala, and A/Sri Sumangala Maha Vidyalaya, Nabadawewa, Eppawala. At both schools, state-of-the-art RO water filtration systems were installed, ensuring that students and the surrounding communities now have reliable access to safe drinking water.\n\nThis effort reflects a strong commitment to addressing critical community needs through practical, technology-driven solutions. By improving access to clean water, the Filter of Hope project continues to transform lives and create healthier futures for students and families in Sri Lanka’s rural communities.",
@@ -1163,7 +1349,9 @@
     "type": "news",
     "project": "sdg-sprints",
     "title": "SIGHT Meets with Sustainable Development Council of Sri Lanka to Discuss SDG Sprints Collaborations",
-    "related_sdgs": [17],
+    "related_sdgs": [
+      17
+    ],
     "related_sdg_targets": [],
     "image": "/images/sight-sdc-for-sdg.jpg",
     "slug": "sight-sdc-for-sdg",
@@ -1192,9 +1380,18 @@
     "type": "news",
     "project": "sdg-sprints",
     "title": "SIGHT Launches \"SDG Sprints\": Designing Humanitarian Tech Projects for a Better Sri Lanka",
-    "related_sdgs": [17],
-    "related_sdg_targets": ["17.17"],
-    "image": ["/images/sdgs/sdg.webp", "/images/sdg-sprints-2025.jpg", "/images/sdg-sprints-2025-2.jpeg", "/images/sdg-sprints-2025-3.jpg"],
+    "related_sdgs": [
+      17
+    ],
+    "related_sdg_targets": [
+      "17.17"
+    ],
+    "image": [
+      "/images/sdgs/sdg.webp",
+      "/images/sdg-sprints-2025.jpg",
+      "/images/sdg-sprints-2025-2.jpeg",
+      "/images/sdg-sprints-2025-3.jpg"
+    ],
     "slug": "sdg-sprints",
     "content": "The IEEE Sri Lanka Section SIGHT launched the SDG Sprints, an initiative aimed at designing innovative humanitarian technology projects to address community challenges while advancing the United Nations Sustainable Development Goals (SDGs).\n\nThe program follows the Double Diamond design process model (https://www.designcouncil.org.uk/our-resources/the-double-diamond/) and focuses on connecting engineering students with local communities to co-develop practical solutions that create measurable social impact. Through a structured four-sprint journey, participants innovate, collaborate, and create meaningful change through actionable humanitarian technology solutions.\n\nThe program structure includes:\n\n• Sprint 1 – Launchpad: Begin your journey with inspiration, orientation, and a clear vision of the SDG Sprints mission.\n\n• Sprint 2 – Research: Explore real-world challenges with communities, NGOs, and stakeholders to uncover impactful problem areas.\n\n• Sprint 3 – Design: Turn ideas into reality through ideation, prototyping, and mentorship from industry and academia.\n\n• Sprint 4 – Implementation Support: Connect your solutions with partners for real-world deployment, seed funding, and scaling opportunities.\n\nBy combining technical expertise with real-world needs, the SDG Sprints empowers students to apply their skills in meaningful ways while fostering sustainable development across Sri Lanka. The initiative was further strengthened as IEEE Sri Lanka Section SIGHT received the 2025 IEEE Region 10 HTA Supporting Fund, enabling additional resources to expand the program's reach and enhance its impact. This recognition underscores the value of the project and its potential to create scalable, sustainable humanitarian technology solutions.",
     "date": "2025-08-01",
@@ -1221,9 +1418,19 @@
     "type": "event",
     "project": "filter-of-hope",
     "title": "Renovation of RO Filter System at Saivapragasa Ladies College, Vavuniya | Filter of Hope #6",
-    "related_sdgs": [6],
-    "related_sdg_targets": ["6.1"],
-    "image": ["/images/foh-ro-filter-renovation-vavuniya.jpg", "/images/foh-ro-filter-renovation-vavuniya-2.jpg", "/images/foh-ro-filter-renovation-vavuniya-3.jpg", "/images/foh-ro-filter-renovation-vavuniya-4.jpg", "/images/foh-ro-filter-renovation-vavuniya-5.jpg"],
+    "related_sdgs": [
+      6
+    ],
+    "related_sdg_targets": [
+      "6.1"
+    ],
+    "image": [
+      "/images/foh-ro-filter-renovation-vavuniya.jpg",
+      "/images/foh-ro-filter-renovation-vavuniya-2.jpg",
+      "/images/foh-ro-filter-renovation-vavuniya-3.jpg",
+      "/images/foh-ro-filter-renovation-vavuniya-4.jpg",
+      "/images/foh-ro-filter-renovation-vavuniya-5.jpg"
+    ],
     "slug": "foh-ro-filter-renovation-vavuniya",
     "content": "IEEE Sri Lanka Section SIGHT renovated an existing RO filter system at Saivapragasa Ladies College, Vavuniya. The work included replacing the membrane (Vontron) and installing a 200GPD pump, restoring the system’s full functionality.\n\nWith the renovation completed, students and the surrounding community now have continued access to safe and clean drinking water, strengthening health and daily well-being. This effort highlights the group’s dedication to maintaining and sustaining essential clean water solutions.",
     "date": "2025-09-05",
@@ -1250,7 +1457,11 @@
     "type": "news",
     "project": "sdg-sprints",
     "title": "IEEE HT and ITU Launch The GenAI for Good Challenge",
-    "related_sdgs": [2, 3, 13],
+    "related_sdgs": [
+      2,
+      3,
+      13
+    ],
     "related_sdg_targets": [],
     "image": "/images/itu-gen-ai.png",
     "slug": "genai-for-good-challenge-2025",
@@ -1268,7 +1479,10 @@
     "vtools_spoid": null,
     "vtools_organizational_unit": null,
     "vtools_hosts": null,
-    "vtools_cosponsor_name": ["ieee-ht", "itu"],
+    "vtools_cosponsor_name": [
+      "ieee-ht",
+      "itu"
+    ],
     "vtools_tags": null,
     "vtools_virtual": null,
     "vtools_number_of_ieee_member_attendees": null,
@@ -1279,9 +1493,18 @@
     "type": "event",
     "project": "planet-pulse",
     "title": "Ecological Restoration Field Visit – Endane Biodiversity Corridor (postponed)",
-    "related_sdgs": [13, 15],
-    "related_sdg_targets": ["13.3", "15.1"],
-    "image": ["/images/ecological-restoration-visit.jpg", "/images/ecological-restoration-visit-2.jpg"],
+    "related_sdgs": [
+      13,
+      15
+    ],
+    "related_sdg_targets": [
+      "13.3",
+      "15.1"
+    ],
+    "image": [
+      "/images/ecological-restoration-visit.jpg",
+      "/images/ecological-restoration-visit-2.jpg"
+    ],
     "slug": "ecological-restoration-field-visit-endane-2025",
     "content": "IEEE Sri Lanka Section SIGHT will join as a collaborator to the Dilmah Conservation program for an ecological restoration field visit to the Endane Biodiversity Corridor, Ratnapura. This learning visit offers first‑hand exposure to successful reforestation and land‑restoration practices, biodiversity conservation, and community‑based stewardship.\n\nEvent details:\n• Date: Sunday, 26th October\n• Venue: Endane, Ratnapura\n• Time: 9.30 AM onwards\n• Transport: Provided from Kottawa (subject to availability)\n• Register: https://forms.gle/B7W4mFRa7EnmAcFdA\n\nWhat to bring: Wear light, comfortable clothing with suitable footwear; bring a hat and rain protection depending on weather, and any personal medication if required.\n\nOrganized by Dilmah Conservation with collaborators including Rajarata University, Kahawatte Plantations, and Franklinia Foundation. Coordinated by IEEE Sri Lanka Section SIGHT as part of Planet Pulse. Learn more about the Endane Biodiversity Corridor: https://www.dilmahconservation.org/initiatives/sustainability/biodiversity-corridor-endane.html",
     "date": "2025-10-26",
@@ -1297,7 +1520,9 @@
     "vtools_spoid": "SIGHT114",
     "vtools_organizational_unit": "IEEE Sri Lanka Section SIGHT",
     "vtools_hosts": null,
-    "vtools_cosponsor_name": ["dilmah-conservation"],
+    "vtools_cosponsor_name": [
+      "dilmah-conservation"
+    ],
     "vtools_tags": "#planetpulse #ecology #restoration #biodiversity",
     "vtools_virtual": "No",
     "vtools_number_of_ieee_member_attendees": null,
@@ -1308,9 +1533,18 @@
     "type": "event",
     "project": "sdg-sprints",
     "title": "SDG Sprints Launchpad: Beginning the Journey of Innovation and Purpose",
-    "related_sdgs": [17],
-    "related_sdg_targets": ["17.17"],
-    "image": ["/images/sdg-sprints-2025-launchpad-3.jpg", "/images/sdg-sprints-2025.jpg", "/images/sdg-sprints-2025-launchpad.jpg", "/images/sdg-sprints-2025-launchpad-2.jpg"],
+    "related_sdgs": [
+      17
+    ],
+    "related_sdg_targets": [
+      "17.17"
+    ],
+    "image": [
+      "/images/sdg-sprints-2025-launchpad-3.jpg",
+      "/images/sdg-sprints-2025.jpg",
+      "/images/sdg-sprints-2025-launchpad.jpg",
+      "/images/sdg-sprints-2025-launchpad-2.jpg"
+    ],
     "slug": "sdg-sprints-launchpad-2025",
     "content": "The Launchpad of SDG Sprints marks the beginning of an inspiring journey where innovation meets purpose. The event brings together professionals and young innovators to explore:\n\n• Sri Lanka's SDG Journey – understanding national priorities and progress towards sustainable development.\n\n• Technology for Humanity – reimagining impact through innovative, tech-driven solutions that address real-world challenges.\n\nThis inaugural event sets the stage for Sprint 1 of the SDG Sprints program, providing participants with inspiration, orientation, and a clear vision of the SDG Sprints mission. Through interactive sessions and expert insights, attendees will gain foundational knowledge to begin their journey of creating meaningful humanitarian technology solutions aligned with the United Nations Sustainable Development Goals.",
     "date": "2025-10-31",
@@ -1337,9 +1571,20 @@
     "type": "event",
     "project": "nenasa",
     "title": "Nenasa STEM Education Workshop: Light & Circuits at Siri Vidyakeerthi Kanishta Vidyalaya, Mirigama",
-    "related_sdgs": [4],
-    "related_sdg_targets": ["4.1", "4.4"],
-    "image": ["/images/nenasa-siri-vidyakeerthi.jpg", "/images/nenasa-siri-vidyakeerthi-2.jpg", "/images/nenasa-siri-vidyakeerthi-3.jpg", "/images/nenasa-siri-vidyakeerthi-4.jpg", "/images/nenasa-siri-vidyakeerthi-5.jpg"],
+    "related_sdgs": [
+      4
+    ],
+    "related_sdg_targets": [
+      "4.1",
+      "4.4"
+    ],
+    "image": [
+      "/images/nenasa-siri-vidyakeerthi.jpg",
+      "/images/nenasa-siri-vidyakeerthi-2.jpg",
+      "/images/nenasa-siri-vidyakeerthi-3.jpg",
+      "/images/nenasa-siri-vidyakeerthi-4.jpg",
+      "/images/nenasa-siri-vidyakeerthi-5.jpg"
+    ],
     "slug": "nenasa-light-circuits-workshop-siri-vidyakeerthi-mirigama-2025",
     "content": "On 15th September 2025, the Light & Circuits Workshop was successfully conducted at Siri Vidyakeerthi Kanishta Vidyalaya, Mirigama. The primary goal of the workshop was to help students understand how electricity flows in simple circuits, recognize the differences between bulbs, LEDs, and resistors, and creatively apply their knowledge to build real-world projects.\n\nThe workshop began with an engaging icebreaker that encouraged students to identify sources of light in everyday life. This discussion introduced the concept of how light is produced and how circuits enable it. Students then learned the basics of electrical circuits by assembling simple loops using batteries, wires, and bulbs. Through experimentation, they observed the importance of closed circuits and how electrical energy powers light.\n\nIn the next segment, students explored LEDs and resistors, discovering how LEDs conserve energy and why resistors are crucial for regulating current flow. They tested different setups to observe variations in brightness and learned about safe circuit design.\n\nThe highlight of the workshop was the \"Light-Up Name Badge\" activity, where participants applied their knowledge creatively by designing personalized glowing badges using LEDs, copper tape, and coin-cell batteries.\n\nThe session concluded with a reflective discussion reinforcing the key principles of circuits and encouraging students to continue experimenting. The workshop successfully blended creativity and engineering, inspiring young learners to see themselves as future innovators in technology.",
     "date": "2025-09-15",
@@ -1366,9 +1611,23 @@
     "type": "event",
     "project": "sdg-sprints",
     "title": "SDG Sprints Workshop #1: Health w/ Jendo Innovations & Education w/ Room to Read",
-    "related_sdgs": [3, 4],
-    "related_sdg_targets": ["3.b", "3.d", "4.1", "4.2", "4.6"],
-    "image": ["/images/sdg-sprints-2025-workshop-3.jpg", "/images/sdg-sprints-2025-workshop-1.jpg", "/images/sdg-sprints-2025-workshop-2.jpg", "/images/sdg-sprints-2025-workshop-4.jpg"],
+    "related_sdgs": [
+      3,
+      4
+    ],
+    "related_sdg_targets": [
+      "3.b",
+      "3.d",
+      "4.1",
+      "4.2",
+      "4.6"
+    ],
+    "image": [
+      "/images/sdg-sprints-2025-workshop-3.jpg",
+      "/images/sdg-sprints-2025-workshop-1.jpg",
+      "/images/sdg-sprints-2025-workshop-2.jpg",
+      "/images/sdg-sprints-2025-workshop-4.jpg"
+    ],
     "slug": "sdg-sprints-2025-workshop-1",
     "content": "SDG Sprints Workshop series focused on Good Health and Well-being (SDG 3) and Quality Education (SDG 4). Unleash your creativity and be part of the transformation! Join the Workshop series of SDG Sprints, where innovation meets purpose to address Sri Lanka's most pressing community challenges. Engage in hands-on sessions, tech-driven ideas, and collaborative problem-solving with changemakers across the island. Workshop Day featured inspiring speakers who shed light on powerful ideas driving Good Health and Well-being (SDG 3), and Quality Education (SDG 4) paving the way for a healthier, educated, and sustainable world. Special thanks to Mr. Kulendra Kalimuthu, Senior Manager at Instructional Design & Teacher Support, and Mr. Keerthi Kodithuwakku, Chairman & CEO Jendo Innovations, Entrepreneur, Lecturer, and Healthcare Expert. A heartfelt thank you to all participants for showing up with purpose and heart. Together, we ignited meaningful conversations around Good Health, Quality Education, and community-driven solutions and this is only the beginning. Let's carry this momentum forward as we move to Workshop 2, think bigger, and continue creating solutions that truly matter. We're grateful to NIBM Campus for being a strong partner in this impactful mission.",
     "date": "2025-11-15",
@@ -1376,10 +1635,29 @@
     "link": "https://forms.gle/3br8h9VpAAecKUTNA"
   },
   {
+    "type": "news",
+    "project": "agm",
+    "title": "Call for Nominations: IEEE Sri Lanka Section SIGHT Executive Committee 2026",
+    "related_sdgs": [],
+    "related_sdg_targets": [],
+    "image": "/images/sight-2026-nominations.jpg",
+    "slug": "call-for-nominations-ieee-sl-sight-excom-2026",
+    "content": "Dear Members,\n\nOn behalf of the IEEE Sri Lanka Section SIGHT, the Elections Committee for 2025/26 will accept nominations for the following elected Executive Committee positions for the term of January to December 2026. The AGM is planned to be held during the fourth week (19th-23rd) of January 2026.\n\nWe are seeking nominations for the following positions:\n\nChair\n\nVice Chair\n\nSecretary\n\nTreasurer\n\nAssistant Secretary\n\nAssistant Treasurer\n\nEditor\n\nCommittee Member (5)\n\nPlease note that the current chair, Sewwandie Nanayakkara, will serve as the Immediate Past Chair for 2026.\n\nNomination Conditions:\n\n- A nominee must be a Graduate Student Member, Member, Senior Member, or Fellow of the IEEE, belonging to the IEEE Sri Lanka Section SIGHT.\n\n- Self-nominations should be supported by one IEEE member, above the Graduate Student Member grade.\n\n- All nominations must be duly completed and submitted by 11:59 PM on Sunday, 21st December 2025 via Google Form: https://forms.gle/B6HAuEqEVav61VuY9 .\n\nIf you have any further queries, direct them to peshan@ieee.org.\n\nThank you!",
+    "date": "2025-11-27",
+    "investment": null,
+    "link": "https://forms.gle/B6HAuEqEVav61VuY9"
+  },
+  {
     "type": "event",
     "project": "sdg-sprints",
     "title": "SDG Sprints Workshop #2: Zero Hunger, Clean Water, Affordable Energy, Sustainable Cities & Climate Action",
-    "related_sdgs": [2, 6, 7, 11, 13],
+    "related_sdgs": [
+      2,
+      6,
+      7,
+      11,
+      13
+    ],
     "related_sdg_targets": [],
     "image": "/images/sdg-sprints-2025-workshop-5.jpg",
     "slug": "sdg-sprints-2025-workshop-2",
@@ -1392,8 +1670,13 @@
     "type": "event",
     "project": "nenasa",
     "title": "IEEE Sri Lanka STEM Camp 2025: 3 day residential hands-on STEM camp for 150 students from all 9 provinces",
-    "related_sdgs": [4],
-    "related_sdg_targets": ["4.1", "4.4"],
+    "related_sdgs": [
+      4
+    ],
+    "related_sdg_targets": [
+      "4.1",
+      "4.4"
+    ],
     "image": "/images/nenasa-stem-camp-2025.jpg",
     "slug": "ieee-stem-camp-2025",
     "content": "IEEE STEM Camp 2025 officially launches; bringing together bright young minds from all 9 provinces for three days of creativity, innovation, and entrepreneurial thinking. From hands-on STEM projects to real-world problem-solving, this camp sparks the ideas that shape tomorrow's Sri Lankan innovators. This nationwide STEM experience is designed to inspire and uplift students through hands-on learning, creativity, and innovation. It's a step toward shaping future problem-solvers and young innovators across Sri Lanka.",
