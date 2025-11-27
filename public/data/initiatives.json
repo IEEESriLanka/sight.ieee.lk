@@ -1610,7 +1610,7 @@
   {
     "type": "event",
     "project": "sdg-sprints",
-    "title": "SDG Sprints Workshop #1: Health w/ Jendo Innovations & Education w/ Room to Read",
+    "title": "SDG Sprints Workshop #1: Health with Jendo Innovations & Education with Room to Read",
     "related_sdgs": [
       3,
       4
@@ -1643,9 +1643,22 @@
     "image": "/images/sight-2026-nominations.jpg",
     "slug": "call-for-nominations-ieee-sl-sight-excom-2026",
     "content": "Dear Members,\n\nOn behalf of the IEEE Sri Lanka Section SIGHT, the Elections Committee for 2025/26 will accept nominations for the following elected Executive Committee positions for the term of January to December 2026. The AGM is planned to be held during the fourth week (19th-23rd) of January 2026.\n\nWe are seeking nominations for the following positions:\n\nChair\n\nVice Chair\n\nSecretary\n\nTreasurer\n\nAssistant Secretary\n\nAssistant Treasurer\n\nEditor\n\nCommittee Member (5)\n\nPlease note that the current chair, Sewwandie Nanayakkara, will serve as the Immediate Past Chair for 2026.\n\nNomination Conditions:\n\n- A nominee must be a Graduate Student Member, Member, Senior Member, or Fellow of the IEEE, belonging to the IEEE Sri Lanka Section SIGHT.\n\n- Self-nominations should be supported by one IEEE member, above the Graduate Student Member grade.\n\n- All nominations must be duly completed and submitted by 11:59 PM on Sunday, 21st December 2025 via Google Form: https://forms.gle/B6HAuEqEVav61VuY9 .\n\nIf you have any further queries, direct them to peshan@ieee.org.\n\nThank you!",
-    "date": "2025-11-27",
+    "date": "2025-11-21",
     "investment": null,
     "link": "https://forms.gle/B6HAuEqEVav61VuY9"
+  },
+  {
+    "type": "news",
+    "project": "nsbm-sight",
+    "title": "Launch of IEEE SIGHT Affinity Group of NSBM",
+    "related_sdgs": [],
+    "related_sdg_targets": [],
+    "image": "/images/ieee-sight-nsbm.jpg",
+    "slug": "launch-ieee-sight-nsbm-first-sb-sight-sri-lanka",
+    "content": "We are proud to announce the launch of the IEEE SIGHT Affinity Group of NSBM, Sri Lanka’s first-ever Student Branch–affiliated SIGHT Affinity Group! ✨\n\nThis marks a significant milestone for NSBM Green University as we work toward advancing humanitarian technology, fostering innovation, and empowering students to create meaningful social impact.\n\nThe IEEE Student Branch at NSBM Green University has petitioned and formed the NSBM SB SIGHT Affinity Group, the first SIGHT affinity group tied to any student branch in Sri Lanka. The petition was submitted on 10 September 2025.\n\nThe NSBM SB SIGHT group targets underserved communities across Sri Lanka’s 25 districts, including rural students, visually impaired children, and digitally vulnerable populations. Partnerships are being built with rural schools and blind institutions.\n\nThe petition includes four scalable projects focused on assistive technology demonstrations for visually impaired children, hands-on STEM workshops in rural schools, cybercrime awareness sessions, and leadership development programs.",
+    "date": "2025-11-27",
+    "investment": null,
+    "link": null
   },
   {
     "type": "event",
