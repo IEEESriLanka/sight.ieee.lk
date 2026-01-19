@@ -12,6 +12,8 @@ const Hero: React.FC<HeroProps> = ({ stats }) => {
   const [currentSlide, setCurrentSlide] = useState(0);
 
   const backgroundImages = [
+    "/images/ieee-sl-outstanding-ag-2025.jpg",
+    "/images/sdg-sprints-2025-workshop-6.jpg",
     "/images/bg1.webp",
     "/images/bg2.webp",
     "/images/bg3.webp",
@@ -150,9 +152,8 @@ const Hero: React.FC<HeroProps> = ({ stats }) => {
           <button
             key={index}
             onClick={() => setCurrentSlide(index)}
-            className={`w-3 h-3 rounded-full transition-colors ${
-              index === currentSlide ? "bg-white" : "bg-white bg-opacity-50"
-            }`}
+            className={`w-3 h-3 rounded-full transition-colors ${index === currentSlide ? "bg-white" : "bg-white bg-opacity-50"
+              }`}
           />
         ))}
       </div>

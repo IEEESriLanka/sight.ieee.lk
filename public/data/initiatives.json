@@ -463,7 +463,7 @@
       "4.1",
       "4.4"
     ],
-    "image": "/images/nenasa-veyangoda-st-mary",
+    "image": "/images/nenasa-veyangoda-st-mary.jpg",
     "slug": "nenasa-veyangoda-st-mary",
     "content": "The first workshop of “IEEE නැණස”, a collaboration between the Sri Lanka Section Student Activities Committee (SLSAC) and IEEE Sri Lanka Section SIGHT, was held on 13 January at St. Mary’s College, Veyangoda with over 120 participants.\n\nAs the pilot project of the initiative, the workshop successfully introduced school children to the world of STEM education and created enthusiasm for future learning. The program aimed to spark curiosity and broaden awareness of opportunities in science, technology, engineering, and mathematics.\n\nWith its successful start, IEEE නැණස is set to continue with more workshops, reaching a wider student community and strengthening access to STEM education across Sri Lanka.",
     "date": "2023-01-13",
@@ -492,7 +492,8 @@
     "title": "Green Pulse: Mangrove Plant Restoration at Koggala Lagoon",
     "related_sdgs": [
       14,
-      15
+      15,
+      13
     ],
     "related_sdg_targets": [
       "14.2",
@@ -570,7 +571,8 @@
     "title": "Innovative Waste Management and Energy Conversion Workshop with Mr. Nalin Mannapperuma",
     "related_sdgs": [
       11,
-      12
+      12,
+      13
     ],
     "related_sdg_targets": [
       "11.6",
@@ -1011,7 +1013,7 @@
       "4.1",
       "4.4"
     ],
-    "image": "/images/nenasa-kandakepu-ulpatha",
+    "image": "/images/nenasa-kandakepu-ulpatha.jpg",
     "slug": "nenasa-kandakepu-ulpatha",
     "content": "On 4 May 2023, the “IEEE නැණස” program reached the Uva Province with a workshop at B/ Kandakepu Ulpatha Maha Vidyalaya. This initiative, organized by IEEE Sri Lanka Section SIGHT in collaboration with the IEEE Sri Lanka Section Student Activities Committee (SLSAC) and the IEEE student branches of Uva Wellassa University of Sri Lanka, Sabaragamuwa University of Sri Lanka, Open University of Sri Lanka, and Informatics Institute of Technology (IIT), aimed to make STEM education more accessible to students in rural schools.\n\nThe session provided opportunities for students to explore science, technology, engineering, and mathematics beyond their regular curriculum, helping them to overcome barriers in pursuing these fields. By creating such learning experiences, IEEE නැණස continues to inspire and empower the next generation to reach their dreams.",
     "date": "2023-05-04",
@@ -1045,7 +1047,7 @@
       "4.1",
       "4.4"
     ],
-    "image": "/images/nenasa-hapugala",
+    "image": "/images/nenasa-hapugala.jpg",
     "slug": "nenasa-hapugala",
     "content": "The second workshop of “IEEE නැණස”, a joint initiative between the Sri Lanka Section Student Activities Committee (SLSAC) and IEEE Sri Lanka Section SIGHT, was conducted on 3 May 2023 at Hapugala Maha Vidyalaya, Hapugala.\n\nThe program continued its mission of empowering STEM education among Sri Lankan school students by providing exposure to science, technology, engineering, and mathematics beyond the classroom. Building on the success of its inaugural session, this workshop further strengthened the project’s vision of inspiring curiosity and fostering innovation among young learners.",
     "date": "2023-05-03",
@@ -1255,7 +1257,7 @@
   {
     "type": "awards",
     "project": "sihinayata-peraman",
-    "title": "සිහිනයට පෙරමං Wins Best Affinity Group Project Award at IEEE Sri Lanka Section",
+    "title": "සිහිනයට පෙරමං Wins \"Best Affinity Group Project\" Award at IEEE Sri Lanka Section",
     "related_sdgs": [],
     "related_sdg_targets": [],
     "image": "/images/best-affinity-project-2022.jpg",
@@ -1319,7 +1321,7 @@
   {
     "type": "awards",
     "project": "sight",
-    "title": "IEEE Sri Lanka Section SIGHT Honored as SIGHT Professional Group of the Year at SIGHT Awards Ceremony",
+    "title": "IEEE Sri Lanka Section SIGHT Wins \"SIGHT Professional Group of the Year\" Award at SIGHT Awards Ceremony",
     "related_sdgs": [],
     "related_sdg_targets": [],
     "image": "/images/ieee-sri-lanka-sight-group-of-the-year-2024.jpg",
@@ -1454,42 +1456,6 @@
     "vtools_event_url": null
   },
   {
-    "type": "news",
-    "project": "sdg-sprints",
-    "title": "IEEE HT and ITU Launch The GenAI for Good Challenge",
-    "related_sdgs": [
-      2,
-      3,
-      13
-    ],
-    "related_sdg_targets": [],
-    "image": "/images/itu-gen-ai.png",
-    "slug": "genai-for-good-challenge-2025",
-    "content": "The GenAI for Good Challenge isn't just another AI competition—it's a global call to action. Powered by IEEE HT and the International Telecommunication Union (ITU), this challenge connects innovators with the platform, partners, and ecosystems to build and deploy generative AI solutions rooted in real community needs.\n\nAligned with the UN Sustainable Development Goals (SDGs), participants will develop working prototypes that tackle global pain points like food insecurity, climate adaptation, and health system gaps.\n\nThis is an opportunity to:\n\n• Advance solutions through a structured process built for real-world deployment\n• Collaborate with trusted institutions and be guided by global standards for responsible innovation\n• Gain visibility and recognition by building alongside an international community of mission-driven innovators\n• Access up to US$25,000 in funding and entry points into global ecosystems that facilitate deployment\n\nThe challenge focuses on three critical SDG areas: Health, Agriculture & Climate, addressing some of the world's most pressing humanitarian challenges through innovative AI solutions.",
-    "date": "2025-08-31",
-    "investment": null,
-    "link": "https://ieeeht.org/get-involved/funding-opportunities/genai-for-good/",
-    "vtools_id": null,
-    "vtools_event_title": null,
-    "vtools_event_location": null,
-    "vtools_event_date": "13 Aug 2025",
-    "vtools_number_of_attendance": null,
-    "vtools_event_category": null,
-    "vtools_event_sub_category": null,
-    "vtools_spoid": null,
-    "vtools_organizational_unit": null,
-    "vtools_hosts": null,
-    "vtools_cosponsor_name": [
-      "ieee-ht",
-      "itu"
-    ],
-    "vtools_tags": null,
-    "vtools_virtual": null,
-    "vtools_number_of_ieee_member_attendees": null,
-    "vtools_number_of_non_member_attendees": null,
-    "vtools_event_url": null
-  },
-  {
     "type": "event",
     "project": "planet-pulse",
     "title": "Ecological Restoration Field Visit – Endane Biodiversity Corridor (postponed)",
@@ -1608,6 +1574,19 @@
     "vtools_event_url": null
   },
   {
+    "type": "awards",
+    "project": "sight",
+    "title": "IEEE Sri Lanka Section SIGHT Wins \"R10 HTA Outstanding Section\" Award",
+    "image": [
+      "/images/ieee-sl-outstanding-ag-2025-3.jpg",
+      "/images/awards/2025-r10-hta-award.jpg"
+    ],
+    "slug": "2025-r10-hta-outstanding-section-award",
+    "content": "Recognized as 2025 R10 Humanitarian Technology Activities (HTA) Outstanding Section Award for outstanding humanitarian technology initiatives and community impact.",
+    "date": "2025-10-03",
+    "link": "https://web.facebook.com/ieeer10hac/posts/pfbid0WEh8U7bxwwpWrA4iVmL29CHU1hhMGky2UF8VBjryJCRkQzBbP72nHnDWW3ch1qdel"
+  },
+  {
     "type": "event",
     "project": "sdg-sprints",
     "title": "SDG Sprints Workshop #1: Health with Jendo Innovations & Education with Room to Read",
@@ -1623,9 +1602,10 @@
       "4.6"
     ],
     "image": [
-      "/images/sdg-sprints-2025-workshop-3.jpg",
+      "/images/sdg-sprints-2025-workshop-6.jpg",
       "/images/sdg-sprints-2025-workshop-1.jpg",
       "/images/sdg-sprints-2025-workshop-2.jpg",
+      "/images/sdg-sprints-2025-workshop-3.jpg",
       "/images/sdg-sprints-2025-workshop-4.jpg"
     ],
     "slug": "sdg-sprints-2025-workshop-1",
@@ -1651,14 +1631,16 @@
     "type": "news",
     "project": "nsbm-sight",
     "title": "Launch of IEEE SIGHT Affinity Group of NSBM",
-    "related_sdgs": [],
-    "related_sdg_targets": [],
-    "image": "/images/ieee-sight-nsbm.jpg",
+    "image": [
+      "/images/ieee-sight-nsbm-2.jpg",
+      "/images/ieee-sight-nsbm-3.jpg",
+      "/images/ieee-sight-nsbm-4.jpg",
+      "/images/ieee-sight-nsbm.jpg"
+    ],
     "slug": "launch-ieee-sight-nsbm-first-sb-sight-sri-lanka",
     "content": "We are proud to announce the launch of the IEEE SIGHT Affinity Group of NSBM, Sri Lanka’s first-ever Student Branch–affiliated SIGHT Affinity Group! ✨\n\nThis marks a significant milestone for NSBM Green University as we work toward advancing humanitarian technology, fostering innovation, and empowering students to create meaningful social impact.\n\nThe IEEE Student Branch at NSBM Green University has petitioned and formed the NSBM SB SIGHT Affinity Group, the first SIGHT affinity group tied to any student branch in Sri Lanka. The petition was submitted on 10 September 2025.\n\nThe NSBM SB SIGHT group targets underserved communities across Sri Lanka’s 25 districts, including rural students, visually impaired children, and digitally vulnerable populations. Partnerships are being built with rural schools and blind institutions.\n\nThe petition includes four scalable projects focused on assistive technology demonstrations for visually impaired children, hands-on STEM workshops in rural schools, cybercrime awareness sessions, and leadership development programs.",
     "date": "2025-11-27",
-    "investment": null,
-    "link": null
+    "link": "https://www.facebook.com/nsbm.lk/posts/pfbid0RzvLhA78vt8CKp6CKHrfnJvbykQZ6bfgTEnBvUgaafwgBey4jEds6BNfmKutLwVql"
   },
   {
     "type": "event",
@@ -1672,7 +1654,10 @@
       13
     ],
     "related_sdg_targets": [],
-    "image": "/images/sdg-sprints-2025-workshop-5.jpg",
+    "image": [
+      "/images/sdg-sprints-2025-workshop-5.jpg",
+      "/images/sdg-sprints-2025-workshop-7.jpg"
+    ],
     "slug": "sdg-sprints-2025-workshop-2",
     "content": "Unleash your creativity and join the next chapter of the SDG Sprints journey! Workshop 2 brings powerful insights, hands-on learning, and real-world problem discovery across five critical SDGs shaping Sri Lanka's future: Zero Hunger (SDG 2), Clean Water & Sanitation (SDG 6), Affordable & Clean Energy (SDG 7), Sustainable Cities & Communities (SDG 11), and Climate Action (SDG 13). Engage in interactive sessions, explore community challenges, and collaborate with innovators and changemakers determined to build a sustainable Sri Lanka.",
     "date": "2025-11-29",
@@ -1682,7 +1667,7 @@
   {
     "type": "event",
     "project": "nenasa",
-    "title": "IEEE Sri Lanka STEM Camp 2025: 3 day residential hands-on STEM camp for 150 students from all 9 provinces",
+    "title": "IEEE Sri Lanka STEM Camp 2025: 3 day residential hands-on STEM camp for 150 students from all 9 provinces (postponed)",
     "related_sdgs": [
       4
     ],
@@ -1696,5 +1681,66 @@
     "date": "2025-11-29",
     "investment": null,
     "link": "https://nenasa.ieee.lk/stemcamp2025"
+  },
+  {
+    "type": "event",
+    "project": "filter-of-hope",
+    "title": "Renovation of Water Filter at V/Madukanda National School, Vavuniya under IEEE Sri Lanka Section Disaster Relief Initiative",
+    "related_sdgs": [
+      6
+    ],
+    "related_sdg_targets": [
+      "6.1",
+      "6.b"
+    ],
+    "image": "/images/madukanda-filter-renovation.jpeg",
+    "slug": "renovation-water-filter-madukanda-national-school-vavuniya",
+    "content": "Renovation of the RO Water Filter at Madukanda National School, Vavuniya. The automatic operations of the filter were damaged during the recent floods, and the school has requested our assistance to carry out the necessary repairs.\n\nThis initiative was fully supported by the donations received for the IEEE Sri Lanka Section Disaster Relief Initiative (aid.ieee.lk).",
+    "date": "2026-01-08",
+    "investment": "LKR 345,500.00",
+    "link": "https://aid.ieee.lk",
+    "vtools_id": null
+  },
+  {
+    "type": "news",
+    "project": "sight",
+    "title": "Meeting with R10 Director, R10 HTA Chair and IEEE India Philanthropy to Expand Humanitarian Initiatives",
+    "related_sdgs": [
+      17
+    ],
+    "related_sdg_targets": [
+      "17.16",
+      "17.17"
+    ],
+    "image": "/images/sight-r10-meeting.jpg",
+    "slug": "meeting-r10-director-hta-chair-india-philanthropy-expand-initiatives",
+    "content": "IEEE Sri Lanka Section SIGHT along with Section Disaster Relief Ad hoc met with R10 Director, R10 HTA Chair and IEEE India Philanthropy to discuss expanding humanitarian initiatives in Sri Lanka. Ashoka Vittala, IEEE India Philanthropy Manager, Saurabh J. Soni, Chair, IEEE Region10 HTA 2025, Prof Takako Hashimoto, IEEE R10 Director (2025-26), Deepak Mathur, Past IEEE R10 Director and MGA VP along with Sri Lanka Section volunteers discussed how we can expand other HTB programs beyond SIGHT and also how India Philanthropy can closely support efforts in Sri Lanka",
+    "date": "2026-01-10",
+    "link": null
+  },
+  {
+    "type": "awards",
+    "project": "sight",
+    "title": "IEEE Sri Lanka Section SIGHT Wins “Section Outstanding Affinity Group” Award",
+    "image": [
+      "/images/ieee-sl-outstanding-ag-2025.jpg",
+      "/images/ieee-sl-outstanding-ag-2025-2.jpg",
+      "/images/ieee-sl-outstanding-ag-2025-3.jpg"
+    ],
+    "slug": "ieee-sl-section-outstanding-affinity-group-award-2025",
+    "content": "We are delighted to share that IEEE Sri Lanka Section SIGHT has won the “Section Outstanding Affinity Group” award. This recognition is a testament to the dedication of everyone who has supported this growing entity in ways big and small over the past few years. From sharing ideas to volunteering, your contributions have helped shape this journey and the impact we have created together.\n\nThis achievement builds on two proud milestones: being recognized as the IEEE Region 10 Best Section for Humanitarian Activities and receiving the global IEEE SIGHT Group of the Year award.\n\nMore than any award, what truly matters is the lasting impact we have created in communities that will endure for generations. Thank you for being a part of this journey.",
+    "date": "2026-01-12",
+    "link": "https://ieee.lk/past-awards/"
+  },
+  {
+    "type": "event",
+    "project": "agm",
+    "title": "IEEE Sri Lanka Section SIGHT Annual General Meeting 2026 & Community Catalysts Recognition",
+    "image": "/images/logos/sight-sl-logo.png",
+    "slug": "sight-agm-community-catalysts-recognition-2026",
+    "content": "The IEEE Sri Lanka Section SIGHT Annual General Meeting (AGM) & Community Catalysts Recognition – 2026 is scheduled for Saturday, 24th January 2026, from 05.00 PM onwards at Trace Expert City, Colombo 01000.\n\nThe AGM will include a review of SIGHT activities and achievements over the past year, leadership updates, and plans for the year ahead. As part of the AGM, we will also host Community Catalysts, a special segment dedicated to recognizing and appreciating the contributions of volunteers who have driven humanitarian and social impact initiatives through IEEE Sri Lanka Section.\n\nAll IEEE Sri Lanka Section members are warmly invited to attend to discuss important matters concerning the section's progress and future.",
+    "date": "2026-01-24",
+    "link": "https://bit.ly/slsight-agm",
+    "vtools_id": null
   }
 ]

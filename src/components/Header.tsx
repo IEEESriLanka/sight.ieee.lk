@@ -45,7 +45,7 @@ const Header: React.FC<HeaderProps> = ({ showMetaNav = true }) => {
   const [featuredProjects, setFeaturedProjects] = useState<
     Array<{ name: string; href: string; logo: string }>
   >([]);
-  
+
 
   const location = useLocation();
 
@@ -142,7 +142,7 @@ const Header: React.FC<HeaderProps> = ({ showMetaNav = true }) => {
     fetchFeaturedProjects();
   }, []);
 
-  
+
 
   // Cleanup timeout on unmount
   useEffect(() => {
@@ -183,9 +183,8 @@ const Header: React.FC<HeaderProps> = ({ showMetaNav = true }) => {
 
 
   return (
-    <header className={`bg-white shadow-sm z-50 transition-all duration-300 ease-in-out ${
-      showMetaNav ? 'sticky top-0' : 'fixed top-0 left-0 right-0'
-    }`}>
+    <header className={`bg-white shadow-sm z-50 transition-all duration-300 ease-in-out ${showMetaNav ? 'sticky top-0' : 'fixed top-0 left-0 right-0'
+      }`}>
       {/* Mega Menu Styles */}
       <style
         dangerouslySetInnerHTML={{
@@ -206,7 +205,7 @@ const Header: React.FC<HeaderProps> = ({ showMetaNav = true }) => {
       />
       <nav className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* 2x2 Grid Layout for Desktop */}
-        <div className="hidden md:grid md:grid-rows-2 md:gap-x-6 md:gap-y-0 md:min-h-[64px] md:py-1" style={{gridTemplateColumns: 'auto 1fr'}}>
+        <div className="hidden md:grid md:grid-rows-2 md:gap-x-6 md:gap-y-0 md:min-h-[64px] md:py-1" style={{ gridTemplateColumns: 'auto 1fr' }}>
           {/* Column 1 - SIGHT Logo (spans both rows) */}
           <div className="row-span-2 flex items-center">
             <Link to="/" className="flex items-center">
@@ -225,19 +224,19 @@ const Header: React.FC<HeaderProps> = ({ showMetaNav = true }) => {
                 IEEE Sri Lanka Section SIGHT | Special Interest Group on Humanitarian Technology
               </span>
             </div>
-            
+
             {/* IEEE Master Brand */}
             <div className="flex items-center ml-4 flex-shrink-0">
-              <a 
+              <a
                 href="https://www.ieee.org/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center"
                 aria-label="IEEE"
               >
-                <img 
-                  src="/images/logos/ieee-logo.png" 
-                  alt="IEEE" 
+                <img
+                  src="/images/logos/ieee-logo.png"
+                  alt="IEEE"
                   className="h-[33px] w-auto min-w-[100px] max-w-[120px] object-contain"
                   style={{
                     // Clear space: 1/2x where x=height of letters I-E-E-E (approximately 16.5px)
@@ -250,7 +249,7 @@ const Header: React.FC<HeaderProps> = ({ showMetaNav = true }) => {
 
           {/* Column 2, Row 2 - Desktop Navigation */}
           <div className="flex items-center relative">
-            <div 
+            <div
               className="flex items-baseline justify-between w-full mega-menu-trigger"
               onMouseEnter={handleMenuEnter}
               onMouseLeave={handleMenuLeave}
@@ -263,11 +262,10 @@ const Header: React.FC<HeaderProps> = ({ showMetaNav = true }) => {
                       key={item.name}
                       to={item.href}
                       onClick={() => window.scrollTo(0, 0)}
-                      className={`pr-1 lg:pr-2 py-2 rounded-md text-sm font-medium transition-colors whitespace-nowrap ${
-                        isActive(item.href)
-                          ? "bg-blue-100 text-blue-700"
-                          : "text-gray-600 hover:text-gray-900 hover:bg-gray-50"
-                      }`}
+                      className={`pr-1 lg:pr-2 py-2 rounded-md text-sm font-medium transition-colors whitespace-nowrap ${isActive(item.href)
+                        ? "bg-blue-100 text-blue-700"
+                        : "text-gray-600 hover:text-gray-900 hover:bg-gray-50"
+                        }`}
                     >
                       {item.name}
                     </Link>
@@ -278,11 +276,10 @@ const Header: React.FC<HeaderProps> = ({ showMetaNav = true }) => {
                 return (
                   <button
                     key={item.name}
-                    className={`px-1 lg:px-2 py-2 rounded-md text-sm font-medium transition-colors whitespace-nowrap ${
-                      isActive(item.href)
-                        ? "bg-blue-100 text-blue-700"
-                        : "text-gray-600 hover:text-gray-900 hover:bg-gray-50"
-                    }`}
+                    className={`px-1 lg:px-2 py-2 rounded-md text-sm font-medium transition-colors whitespace-nowrap ${isActive(item.href)
+                      ? "bg-blue-100 text-blue-700"
+                      : "text-gray-600 hover:text-gray-900 hover:bg-gray-50"
+                      }`}
                   >
                     {item.name}
                     <ChevronDown className="ml-1 h-4 w-4 inline" />
@@ -292,14 +289,14 @@ const Header: React.FC<HeaderProps> = ({ showMetaNav = true }) => {
             </div>
 
             {/* Mega Menu Panel */}
-            <div 
+            <div
               className={`mega-menu absolute top-full left-0 right-0 mt-2 bg-white rounded-lg shadow-lg border border-gray-200 z-50 ${isMegaMenuOpen ? 'open' : ''}`}
               onMouseEnter={handleMenuEnter}
               onMouseLeave={handleMenuLeave}
             >
               <div className="max-w-7xl mx-auto p-6">
                 <div className="grid grid-cols-5 gap-8">
-                  
+
                   {/* Impact Areas Column */}
                   <div>
                     <h3 className="font-semibold text-gray-900 mb-4">Impact Areas</h3>
@@ -377,7 +374,7 @@ const Header: React.FC<HeaderProps> = ({ showMetaNav = true }) => {
                       >
                         All SDGs Overview
                       </Link>
-                      {allSDGs.filter(sdg => ["4", "6", "9", "12", "13", "17"].includes(sdg.code)).map((sdg) => (
+                      {allSDGs.filter(sdg => ["4", "6", "9", "13", "17"].includes(sdg.code)).map((sdg) => (
                         <Link
                           key={sdg.code}
                           to={`/sdg/${sdg.code}`}
@@ -471,6 +468,13 @@ const Header: React.FC<HeaderProps> = ({ showMetaNav = true }) => {
                         Our Partners
                       </Link>
                       <Link
+                        to="/initiatives?type=awards"
+                        onClick={closeMegaMenu}
+                        className="block text-sm text-gray-600 hover:text-gray-900 hover:bg-gray-50 px-2 py-1 rounded"
+                      >
+                        Our Achievements
+                      </Link>
+                      <Link
                         to="/resources"
                         onClick={closeMegaMenu}
                         className="block text-sm text-gray-600 hover:text-gray-900 hover:bg-gray-50 px-2 py-1 rounded"
@@ -533,16 +537,16 @@ const Header: React.FC<HeaderProps> = ({ showMetaNav = true }) => {
           <div className="md:hidden">
             {/* IEEE Master Brand for mobile */}
             <div className="px-2 pt-2 pb-3 border-b border-gray-200">
-              <a 
+              <a
                 href="https://www.ieee.org/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center justify-center"
                 aria-label="IEEE"
               >
-                <img 
-                  src="/images/logos/ieee-logo.png" 
-                  alt="IEEE" 
+                <img
+                  src="/images/logos/ieee-logo.png"
+                  alt="IEEE"
                   className="h-[33px] w-auto min-w-[100px] max-w-[120px] object-contain"
                   style={{
                     // Clear space: 1/2x where x=height of letters I-E-E-E (approximately 16.5px)
@@ -563,11 +567,10 @@ const Header: React.FC<HeaderProps> = ({ showMetaNav = true }) => {
                         setIsMenuOpen(false);
                         window.scrollTo(0, 0);
                       }}
-                      className={`block px-3 py-2 rounded-md text-base font-medium transition-colors ${
-                        isActive(item.href)
-                          ? "bg-blue-100 text-blue-700"
-                          : "text-gray-600 hover:text-gray-900 hover:bg-gray-50"
-                      }`}
+                      className={`block px-3 py-2 rounded-md text-base font-medium transition-colors ${isActive(item.href)
+                        ? "bg-blue-100 text-blue-700"
+                        : "text-gray-600 hover:text-gray-900 hover:bg-gray-50"
+                        }`}
                     >
                       {item.name}
                     </Link>
@@ -582,17 +585,15 @@ const Header: React.FC<HeaderProps> = ({ showMetaNav = true }) => {
                     {/* Main Item with Toggle */}
                     <button
                       onClick={() => toggleSection(item.name)}
-                      className={`w-full flex items-center justify-between px-3 py-2 rounded-md text-base font-medium transition-colors ${
-                        isActive(item.href)
-                          ? "bg-blue-100 text-blue-700"
-                          : "text-gray-600 hover:text-gray-900 hover:bg-gray-50"
-                      }`}
+                      className={`w-full flex items-center justify-between px-3 py-2 rounded-md text-base font-medium transition-colors ${isActive(item.href)
+                        ? "bg-blue-100 text-blue-700"
+                        : "text-gray-600 hover:text-gray-900 hover:bg-gray-50"
+                        }`}
                     >
                       <span>{item.name}</span>
                       <ChevronDown
-                        className={`h-4 w-4 transition-transform ${
-                          isExpanded ? "transform rotate-180" : ""
-                        }`}
+                        className={`h-4 w-4 transition-transform ${isExpanded ? "transform rotate-180" : ""
+                          }`}
                       />
                     </button>
 
@@ -701,7 +702,7 @@ const Header: React.FC<HeaderProps> = ({ showMetaNav = true }) => {
                               Quick Access SDGs
                             </div>
                             {allSDGs
-                              .filter((sdg) => ["4", "6", "9", "12", "13", "17"].includes(sdg.code))
+                              .filter((sdg) => ["4", "6", "9", "13", "17"].includes(sdg.code))
                               .map((sdgItem) => (
                                 <Link
                                   key={sdgItem.code}
@@ -796,7 +797,7 @@ const Header: React.FC<HeaderProps> = ({ showMetaNav = true }) => {
                             >
                               About SIGHT
                             </Link>
-                            
+
                             <Link
                               to="/initiatives?search=annual+general+meeting"
                               onClick={() => {
@@ -807,7 +808,7 @@ const Header: React.FC<HeaderProps> = ({ showMetaNav = true }) => {
                             >
                               SIGHT Governance
                             </Link>
-                            
+
                             <Link
                               to="/volunteers"
                               onClick={() => {
@@ -818,7 +819,7 @@ const Header: React.FC<HeaderProps> = ({ showMetaNav = true }) => {
                             >
                               Our Volunteers
                             </Link>
-                            
+
                             <Link
                               to="/partners"
                               onClick={() => {
@@ -829,7 +830,18 @@ const Header: React.FC<HeaderProps> = ({ showMetaNav = true }) => {
                             >
                               Our Partners
                             </Link>
-                            
+
+                            <Link
+                              to="/initiatives?type=awards"
+                              onClick={() => {
+                                setIsMenuOpen(false);
+                                window.scrollTo(0, 0);
+                              }}
+                              className="block px-3 py-2 rounded-md text-sm text-gray-700 hover:text-gray-900 hover:bg-gray-50"
+                            >
+                              Our Achievements
+                            </Link>
+
                             <Link
                               to="/resources"
                               onClick={() => {

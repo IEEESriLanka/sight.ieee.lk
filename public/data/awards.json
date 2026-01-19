@@ -1,5 +1,15 @@
 [
   {
+    "title": "2025 Section Outstanding Affinity Group",
+    "organization": "IEEE Sri Lanka Section Awards",
+    "description": "Recognized as the Outstanding Affinity Group for exceptional dedication, volunteer contribution, and impactful community initiatives.",
+    "link": "https://ieee.lk/past-awards/",
+    "icon": "Trophy",
+    "image": "/images/ieee-sl-outstanding-ag-2025.jpg",
+    "color": "text-green-600",
+    "bgColor": "bg-green-100"
+  },
+  {
     "title": "2025 R10 HTA Outstanding Section Award",
     "organization": "IEEE Region 10 Awards",
     "description": "Recognized as 2025 R10 HTA Outstanding Section Award for outstanding humanitarian technology initiatives and community impact.",
@@ -21,7 +31,7 @@
   },
   {
     "title": "2022 Best Affinity Group Project",
-    "organization": "IEEE Sri Lanka Section Awrds",
+    "organization": "IEEE Sri Lanka Section Awards",
     "description": "Sihinayata Peraman recognized for exceptional project execution and community engagement in humanitarian technology initiatives.",
     "link": "https://www.facebook.com/IEEESriLanka/photos/success-is-the-result-of-perfection-hard-work-learning-from-failure-loyalty-and-/723402296240973/",
     "icon": "Award",

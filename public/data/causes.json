@@ -1,48 +1,40 @@
 [
   {
     "id": 4,
-    "title": "STEM Education",
-    "description": "Empowering communities through STEM education and digital literacy programs.",
+    "title": "STEM & Digital Education",
+    "description": "Expanding access to STEM learning and digital literacy for underserved communities.",
     "iconName": "GraduationCap",
     "color": "bg-red-700",
     "hoverColor": "hover:bg-red-800"
   },
   {
     "id": 6,
-    "title": "Clean Water for School Villages",
-    "description": "Providing safe drinking water solutions to communities affected by CKDu.",
+    "title": "Safe Water for School Communities",
+    "description": "Delivering safe drinking water solutions to schools in CKDu-affected regions.",
     "iconName": "Droplets",
     "color": "bg-blue-500",
     "hoverColor": "hover:bg-blue-600"
   },
   {
     "id": 9,
-    "title": "Social Innovation",
-    "description": "Enhancing scientific research, upgrading technological capabilities, and conducting innovation-focused competitions.",
+    "title": "Community-Driven Social Innovation",
+    "description": "Strengthening research, technology capacity, and grassroots innovation initiatives.",
     "iconName": "Cog",
     "color": "bg-orange-600",
     "hoverColor": "hover:bg-orange-700"
   },
   {
-    "id": 12,
-    "title": "Waste Management & Clean Energy",
-    "description": "Driving awareness and action on waste reduction and management across communities.",
-    "iconName": "Recycle",
-    "color": "bg-yellow-600",
-    "hoverColor": "hover:bg-yellow-700"
-  },
-  {
     "id": 13,
-    "title": "Climate & Sustainability",
-    "description": "Developing sustainable technologies to combat climate change impacts.",
+    "title": "Climate Action & Sustainability",
+    "description": "Advancing sustainable technologies to address climate and environmental challenges.",
     "iconName": "Leaf",
     "color": "bg-green-700",
     "hoverColor": "hover:bg-green-800"
   },
   {
     "id": 17,
-    "title": "Partnerships for the Goals",
-    "description": "Enhancing global partnerships that mobilize knowledge, expertise, and resources for sustainable development.",
+    "title": "Strategic Social Impact Partnerships",
+    "description": "Building partnerships to mobilize expertise and resources for sustainable impact.",
     "iconName": "Handshake",
     "color": "bg-blue-800",
     "hoverColor": "hover:bg-blue-900"
