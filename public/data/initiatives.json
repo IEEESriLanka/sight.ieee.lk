@@ -1683,25 +1683,6 @@
     "link": "https://nenasa.ieee.lk/stemcamp2025"
   },
   {
-    "type": "event",
-    "project": "filter-of-hope",
-    "title": "Renovation of Water Filter at V/Madukanda National School, Vavuniya under IEEE Sri Lanka Section Disaster Relief Initiative",
-    "related_sdgs": [
-      6
-    ],
-    "related_sdg_targets": [
-      "6.1",
-      "6.b"
-    ],
-    "image": "/images/madukanda-filter-renovation.jpeg",
-    "slug": "renovation-water-filter-madukanda-national-school-vavuniya",
-    "content": "Renovation of the RO Water Filter at Madukanda National School, Vavuniya. The automatic operations of the filter were damaged during the recent floods, and the school has requested our assistance to carry out the necessary repairs.\n\nThis initiative was fully supported by the donations received for the IEEE Sri Lanka Section Disaster Relief Initiative (aid.ieee.lk).",
-    "date": "2026-01-08",
-    "investment": "LKR 345,500.00",
-    "link": "https://aid.ieee.lk",
-    "vtools_id": null
-  },
-  {
     "type": "news",
     "project": "sight",
     "title": "Meeting with R10 Director, R10 HTA Chair and IEEE India Philanthropy to Expand Humanitarian Initiatives",
